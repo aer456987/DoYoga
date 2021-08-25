@@ -1,0 +1,364 @@
+---
+title: 預約課程 - 填寫資料
+layout: ./app/layout.ejs
+engine: ejs
+current: reserve_step2_fillOrder
+---
+
+<main class="pt-6 pt-md-8 pb-11 pb-md-10 pb-lg-13">
+  <section class="container">
+    <h2 class="fs-3 text-primary text-center mb-3 mb-md-2">
+      立即預約
+    </h2>
+
+    <ul class="row justify-content-center">
+      <li class="col-4 col-md-3 col-lg-2">
+        <div class="text-primary bg-secondary rounded-pill text-center py-1.5 px-1">
+          選擇方案
+        </div>
+      </li>
+      <li class="col-4 col-md-3 col-lg-2">
+        <div class="text-light bg-primary rounded-pill text-center py-1.5 px-1">
+          填寫資料
+        </div>
+      </li>
+      <li class="col-4 col-md-3 col-lg-2">
+        <div class="text-primary bg-secondary rounded-pill text-center py-1.5 px-1">
+          完成預約
+        </div>
+      </li>
+    </ul>
+
+    <form
+      action=""
+      method="POST"
+      class="pt-4 pt-md-3 pt-lg-4"
+    >
+      <h3 class="fs-5 fw-light text-primary-light text-center
+        mb-3 mb-lg-4"
+      >
+        <span class="fs-7 text-dark me-2">
+          你選擇的是
+        </span>
+        首次體驗課程-基礎
+      </h3>
+
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-4">
+          <ul class="text-dark mb-4">
+            <li class="mb-4">
+              <p class="mb-2">1. 是否接觸過瑜珈?</p>
+
+              <label
+                for="yogaYesRadio"
+                class="form-label me-4"
+              >
+                <input
+                  type="radio"
+                  name="practiseYogaRadio"
+                  value="接觸過瑜珈"
+                  id="yogaYesRadio"
+                  class="form-check-input"
+                  checked
+                >
+                是
+              </label>
+
+              <label
+                for="yogaNoRadio"
+                class="form-label"
+              >
+                <input
+                  type="radio"
+                  name="practiseYogaRadio"
+                  value="沒接觸過瑜珈"
+                  id="yogaNoRadio"
+                  class="form-check-input"
+                >
+                否
+              </label>
+            </li>
+
+            <li class="mb-4">
+              <p class="mb-2">2. 想改善的生活問題?</p>
+
+              <ul>
+                <li class="mb-2">
+                  <label
+                    for="muscleEndurance"
+                    class="form-label me-2"
+                  >
+                    <input
+                      type="checkbox"
+                      value="肌耐力不足"
+                      name="problemBetterCheckbox"
+                      id="muscleEndurance"
+                      class="form-check-input"
+                    >
+                    肌耐力不足
+                  </label>
+
+                  <label
+                    for="softnessCheckbox"
+                    class="form-label me-2"
+                  >
+                    <input
+                      type="checkbox"
+                      value="柔軟度不佳"
+                      name="problemBetterCheckbox"
+                      id="softnessCheckbox"
+                      class="form-check-input"
+                    >
+                    柔軟度不佳
+                  </label>
+
+                  <label
+                    for="pressureCheckbox"
+                    class="form-label"
+                  >
+                    <input
+                      type="checkbox"
+                      value="壓力大"
+                      name="problemBetterCheckbox"
+                      id="pressureCheckbox"
+                      class="form-check-input"
+                    >
+                    壓力大
+                  </label>
+                </li>
+
+                <li>
+                  <label
+                    for="posture"
+                    class="form-label me-4"
+                  >
+                    <input
+                      type="checkbox"
+                      value="姿勢不正"
+                      name="problemBetterCheckbox"
+                      id="posture"
+                      class="form-check-input"
+                    >
+                    姿勢不正
+                  </label>
+
+                  <label
+                    for="sleepQuality"
+                    class="form-label me-2"
+                  >
+                    <input
+                      type="checkbox"
+                      value="睡眠品質差"
+                      name="problemBetterCheckbox"
+                      id="sleepQuality"
+                      class="form-check-input"
+                    >
+                    睡眠品質差
+                  </label>
+
+                  <label
+                    for="attention"
+                    class="form-label"
+                  >
+                    <input
+                      type="checkbox"
+                      value="注意力不足"
+                      name="problemBetterCheckbox"
+                      id="attention"
+                      class="form-check-input"
+                    >
+                    注意力不足
+                  </label>
+                </li>
+              </ul>
+            </li>
+
+            <li class="mb-4">
+              <p class="mb-2">3. 每週累積運動量約為多少？</p>
+
+              <ul>
+                <li>
+                  <label
+                    for="sportsTime_1"
+                    class="form-label me-4"
+                  >
+                    <input
+                      type="radio"
+                      value="150 分鐘以上"
+                      name="sportsTime"
+                      id="sportsTime_1"
+                      class="form-check-input"
+                      checked
+                    >
+                    150 分鐘以上
+                  </label>
+
+                  <label
+                    for="sportsTime_2"
+                    class="form-label me-4"
+                  >
+                    <input
+                      type="radio"
+                      value="75~150 分鐘"
+                      name="sportsTime"
+                      id="sportsTime_2"
+                      class="form-check-input"
+                    >
+                    75~150 分鐘
+                  </label>
+                </li>
+
+                <li>
+                  <label
+                    for="sportsTime_3"
+                    class="form-label me-5.75"
+                  >
+                    <input
+                      type="radio"
+                      value="30~75 分鐘"
+                      name="sportsTime"
+                      id="sportsTime_3"
+                      class="form-check-input"
+                    >
+                    30~75 分鐘
+                  </label>
+
+                  <label
+                    for="sportsTime_4"
+                    class="form-label"
+                  >
+                    <input
+                      type="radio"
+                      value="30 分鐘以下"
+                      name="sportsTime"
+                      id="sportsTime_4"
+                      class="form-check-input"
+                    >
+                    30 分鐘以下
+                  </label>
+                </li>
+              </ul>
+            </li>
+
+            <li class="mb-4">
+              <label
+                for="reserveDate"
+                class="mb-1"
+              >
+                4. 上課預約報到日
+                <small class="mt-0.5 d-block">
+                  若還沒有確定的日期，可以等待專員與您聯絡時在做詳細的諮詢哦！
+                </small>
+              </label>
+
+              <input
+                type="date"
+                placeholder="MM/DD/YYYY"
+                id="reserveDate"
+                class="form-control w-auto text-primary"
+              >
+            </li>
+
+            <li>
+              <p class="mb-2">5. 填寫基本資料，完成預約後會寄送通知至電子信箱</p>
+
+              <ul class="text-primary">
+                <li class="mb-2">
+                  <div class="row">
+                    <div class="col-6">
+                      <label
+                        for="reserveName"
+                        class="form-label mb-1"
+                      >
+                        姓名
+                      </label>
+                      <input
+                        type="text"
+                        placeholder="請輸入您的姓名"
+                        value="Joanne Chen"
+                        id="reserveName"
+                        class="form-control text-primary"
+                      >
+                    </div>
+
+                    <div class="col-6">
+                      <label
+                        for="reserveAge"
+                        class="form-label mb-1"
+                      >
+                        年齡
+                      </label>
+                      <input
+                        type="text"
+                        placeholder="請輸入您的年齡"
+                        value="18"
+                        id="reserveAge"
+                        class="form-control text-primary"
+                      >
+                    </div>
+                  </div>
+                </li>
+
+                <li class="mb-2">
+                  <label
+                    for="reserveGender"
+                    class="form-label mb-1"
+                  >
+                    性別
+                  </label>
+                  <select
+                    id="reserveGender"
+                    class="form-select border-primary-light w-auto text-primary"
+                  >
+                    <option value="女" selected>女</option>
+                    <option value="男">男</option>
+                  </select>
+                </li>
+
+                <li class="mb-2">
+                  <label
+                    for="reserveEmail"
+                    class="form-label mb-1"
+                  >
+                    電子信箱
+                  </label>
+                  <input
+                    type="email"
+                    placeholder="請輸入Email"
+                    value="example123@gmail.com"
+                    id="reserveEmail"
+                    class="form-control text-primary"
+                  >
+                </li>
+
+                <li>
+                  <label
+                    for="reservePhone"
+                    class="form-label mb-1"
+                  >
+                    手機號碼
+                  </label>
+                  <input
+                    type="tel"
+                    placeholder="請輸入手機號碼"
+                    value="0912-345-678"
+                    id="reservePhone"
+                    class="form-control text-primary"
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <a
+            href="./reserve_step3_reserveFinish.html"
+            class="btn btn-primary-light py-1 w-100"
+          >
+            送出
+          </a>
+        </div>
+      </div>
+
+    </form>
+  </section>
+</main>

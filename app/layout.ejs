@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%- title %></title>
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'xco0ggz',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body class="overflow-x-hidden">
+    <%- include('./components/layout/linkIcons.ejs') %>
+
+
+    <nav class="navbar navbar-expand-lg
+      navbar-light bg-secondary
+      w-100
+      py-2.5
+      z-index-999
+      shadow-sm
+      <%- current === 'index' ? 'position-fixed' : 'position-sticky top-0' %>"
+      
+    >
+      <%- include('./components/layout/navbar.ejs') %>
+    </nav>
+
+    <%- contents %>
+
+    <%- include('./components/layout/modellllllllllllllllll.ejs') %>
+
+    <%- include('./components/layout/footer.ejs') %>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
