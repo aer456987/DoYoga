@@ -97,4 +97,13 @@ $(function() {
       }
     }
   }
+
+
+  const dateDom = document.querySelector('.js-datepicker-date');
+  const datepicker = new Datepicker(dateDom, {
+    autohide: true,
+    prevArrow: '<',
+    nextArrow: '>',
+    buttonClass: 'btn text-primary fw-normal'
+  }); 
 });
