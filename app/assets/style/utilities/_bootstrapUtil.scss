@@ -15,11 +15,24 @@ $utilities: map-merge(
         999: 999,
       )
     ),
+    "opacity": (
+      property: opacity,
+      values: (
+        0\.3: .3,
+      )
+    ),
     "min-width": (
       property: min-width,
       class: minw,
       values: (x9\.7: 970px)
     ),
+    "overflow":
+      map-merge(
+        map-get($utilities, "overflow"),
+        (
+          responsive: true,
+        )
+      ),
     "height":
       map-merge(
         map-get($utilities, "height"),

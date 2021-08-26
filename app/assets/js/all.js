@@ -63,10 +63,10 @@ $(function() {
       const className = $(this).attr('data-name');
 
       $('.js-scheme-card').removeClass('border-light').addClass('border-transparent');
-      $('.js-scheme-card').find(".material-icons-outlined").addClass('opacity-1');
+      $('.js-scheme-card').find(".material-icons-outlined").addClass('opacity-0.3');
 
       $(this).removeClass('border-transparent').addClass('border-light');
-      $(this).find(".material-icons-outlined").removeClass('opacity-1');
+      $(this).find(".material-icons-outlined").removeClass('opacity-0.3');
 
       $('.js-course-class').text(className);
     });
