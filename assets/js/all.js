@@ -40,8 +40,8 @@ $(function () {
     var _swiper = new Swiper(".js-swiper-scheme", {
       slidesPerView: 1,
       slidesPerColumn: 3,
-      spaceBetween: 30,
-      // slidesPerColumnFill : 'column',
+      spaceBetween: 0,
+      slidesPerColumnFill: 'column',
       autoplay: {
         delay: 3500,
         disableOnInteraction: false
@@ -96,5 +96,13 @@ $(function () {
       chackMsgFromValue();
     });
   }
+
+  var dateDom = document.querySelector('.js-datepicker-date');
+  var datepicker = new Datepicker(dateDom, {
+    autohide: true,
+    prevArrow: '<',
+    nextArrow: '>',
+    buttonClass: 'btn text-primary fw-normal'
+  });
 });
 //# sourceMappingURL=all.js.map
