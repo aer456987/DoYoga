@@ -7,8 +7,12 @@ $(function () {
     var swiper = new Swiper(".js-swiper-user-recommend", {
       slidesPerView: 1,
       slidesPerColumn: 3,
-      spaceBetween: 0,
       slidesPerColumnFill: 'column',
+      // grid: {
+      //   rows: 2,
+      //   fill: 'column',
+      // },
+      spaceBetween: 0,
       autoplay: {
         delay: 3500,
         disableOnInteraction: false
@@ -22,12 +26,20 @@ $(function () {
           slidesPerView: 2,
           slidesPerColumn: 2,
           slidesPerColumnFill: 'row',
+          // grid: {
+          //   rows: 2,
+          //   fill: 'row',
+          // },
           spaceBetween: 30
         },
         992: {
           slidesPerView: 3,
           slidesPerColumn: 2,
           slidesPerColumnFill: 'row',
+          // grid: {
+          //   rows: 2,
+          //   fill: 'row',
+          // },
           spaceBetween: 30
         }
       }
