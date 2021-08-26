@@ -57,8 +57,6 @@ $(function() {
       },
     });
 
-
-
     $('.js-scheme-card').on('click', function() {
       const className = $(this).attr('data-name');
 
@@ -71,6 +69,33 @@ $(function() {
       $('.js-course-class').text(className);
     });
   }
+
+  const coursesRecommendSwiper = document.querySelector('.js-swiper-courses-recommend');
+  if (coursesRecommendSwiper) {
+    const swiper = new Swiper(".js-swiper-courses-recommend", {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1200: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+      },
+    });
+  }
+
 
   const msgBtn = document.querySelector('.js-msg-submit');
   if (msgBtn) {
@@ -102,10 +127,12 @@ $(function() {
 
 
   const dateDom = document.querySelector('.js-datepicker-date');
-  const datepicker = new Datepicker(dateDom, {
-    autohide: true,
-    prevArrow: '<',
-    nextArrow: '>',
-    buttonClass: 'btn text-primary fw-normal'
-  }); 
+  if (dateDom) {
+    const datepicker = new Datepicker(dateDom, {
+      autohide: true,
+      prevArrow: '<',
+      nextArrow: '>',
+      buttonClass: 'btn text-primary fw-normal'
+    });
+  }
 });
