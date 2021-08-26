@@ -108,10 +108,12 @@ $(function() {
           spaceBetween: 30,
         },
         992: {
+          centeredSlides: false,
           slidesPerView: 3,
           spaceBetween: 30,
         },
         1200: {
+          centeredSlides: false,
           slidesPerView: 4,
           spaceBetween: 30,
         },
