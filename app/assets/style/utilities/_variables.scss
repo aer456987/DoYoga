@@ -280,7 +280,8 @@ $spacers: (
   11:     $spacer * ( 88 / $base ),  // 88  new
   12:     $spacer * ( 96 / $base ),  // 96  new*補
   13:     $spacer * ( 104 / $base ), // 104 new
-  13\.75:     $spacer * ( 110 / $base ), // 110
+  13\.75: $spacer * ( 110 / $base ), // 110
+  14:     $spacer * ( 112 / $base ), // 112
 
 ) !default;
 
@@ -295,6 +296,7 @@ $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) 
 $position-values: (
   0: 0,
   50: 50%,
+  x0\.55: 55px,
   100: 100%
 ) !default;
 // scss-docs-end position-map

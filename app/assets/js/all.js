@@ -1,7 +1,7 @@
 $(function() {
   const userRecommendSwiper = document.querySelector('.js-swiper-user-recommend');
   if (userRecommendSwiper) {
-    const swiper = new Swiper(".js-swiper-user-recommend", {
+    const swiper = new Swiper('.js-swiper-user-recommend', {
       slidesPerView: 1,
       spaceBetween: 0,
       // slidesPerColumn: 3,             // swiper 6 寫法
@@ -15,8 +15,8 @@ $(function() {
         disableOnInteraction: false,
       },
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
       },
       breakpoints: {
         768: {
@@ -31,8 +31,8 @@ $(function() {
         },
         992: {
           slidesPerView: 3,
-          slidesPerColumn: 2,
-          slidesPerColumnFill: 'row',
+          // slidesPerColumn: 2,
+          // slidesPerColumnFill: 'row',
           grid: {
             rows: 2,
             fill: 'row',
@@ -46,7 +46,7 @@ $(function() {
 
   const schemeSwiper = document.querySelector('.js-swiper-scheme');
   if (schemeSwiper) {
-    const swiper = new Swiper(".js-swiper-scheme", {
+    const swiper = new Swiper('.js-swiper-scheme', {
       slidesPerView: 1,
       spaceBetween: 0,
       // slidesPerColumn: 3,
@@ -81,10 +81,10 @@ $(function() {
       const className = $(this).attr('data-name');
 
       $('.js-scheme-card').removeClass('border-light').addClass('border-transparent');
-      $('.js-scheme-card').find(".material-icons-outlined").addClass('opacity-0.3');
+      $('.js-scheme-card').find('.material-icons-outlined').addClass('opacity-0.3');
 
       $(this).removeClass('border-transparent').addClass('border-light');
-      $(this).find(".material-icons-outlined").removeClass('opacity-0.3');
+      $(this).find('.material-icons-outlined').removeClass('opacity-0.3');
 
       $('.js-course-class').text(className);
     });
@@ -92,7 +92,7 @@ $(function() {
 
   const coursesRecommendSwiper = document.querySelector('.js-swiper-courses-recommend');
   if (coursesRecommendSwiper) {
-    const swiper = new Swiper(".js-swiper-courses-recommend", {
+    const swiper = new Swiper('.js-swiper-courses-recommend', {
       slidesPerView: 1,
       spaceBetween: 30,
       centeredSlides: true,
@@ -116,6 +116,40 @@ $(function() {
           centeredSlides: false,
           slidesPerView: 4,
           spaceBetween: 30,
+        },
+      },
+    });
+  }
+
+  const teachersSwiper = document.querySelector('.js-swiper-teachers');
+  if (teachersSwiper) {
+    const swiper = new Swiper('.js-swiper-teachers', {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      grid: {
+        rows: 4,
+        fill: 'column',
+      },
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+          grid: {
+            rows: 1,
+            fill: 'row',
+          },
+        },
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          grid: {
+            rows: 1,
+            fill: 'row',
+          },
         },
       },
     });
