@@ -37,8 +37,8 @@ $(function() {
     const swiper = new Swiper(".js-swiper-scheme", {
       slidesPerView: 1,
       slidesPerColumn: 3,
-      spaceBetween: 30,
-      // slidesPerColumnFill : 'column',
+      spaceBetween: 0,
+      slidesPerColumnFill : 'column',
       autoplay: {
         delay: 3500,
         disableOnInteraction: false,
@@ -56,6 +56,8 @@ $(function() {
         },
       },
     });
+
+
 
     $('.js-scheme-card').on('click', function() {
       const className = $(this).attr('data-name');
