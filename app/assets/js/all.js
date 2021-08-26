@@ -3,13 +3,13 @@ $(function() {
   if (userRecommendSwiper) {
     const swiper = new Swiper(".js-swiper-user-recommend", {
       slidesPerView: 1,
-      slidesPerColumn: 3,
-      slidesPerColumnFill: 'column',
-      // grid: {
-      //   rows: 2,
-      //   fill: 'column',
-      // },
       spaceBetween: 0,
+      // slidesPerColumn: 3,             // swiper 6 寫法
+      // slidesPerColumnFill: 'column',  // swiper 6 寫法
+      grid: {
+        rows: 3,                         // swiper 7 寫法
+        fill: 'column',
+      },
       autoplay: {
         delay: 3500,
         disableOnInteraction: false,
@@ -21,22 +21,22 @@ $(function() {
       breakpoints: {
         768: {
           slidesPerView: 2,
-          slidesPerColumn: 2,
-          slidesPerColumnFill: 'row',
-          // grid: {
-          //   rows: 2,
-          //   fill: 'row',
-          // },
+          // slidesPerColumn: 2,
+          // slidesPerColumnFill: 'row',
+          grid: {
+            rows: 2,
+            fill: 'row',
+          },
           spaceBetween: 30,
         },
         992: {
           slidesPerView: 3,
           slidesPerColumn: 2,
           slidesPerColumnFill: 'row',
-          // grid: {
-          //   rows: 2,
-          //   fill: 'row',
-          // },
+          grid: {
+            rows: 2,
+            fill: 'row',
+          },
           spaceBetween: 30,
         },
       },
@@ -48,9 +48,11 @@ $(function() {
   if (schemeSwiper) {
     const swiper = new Swiper(".js-swiper-scheme", {
       slidesPerView: 1,
-      slidesPerColumn: 3,
       spaceBetween: 0,
-      slidesPerColumnFill : 'column',
+      // slidesPerColumn: 3,
+      grid: {
+        rows: 3,
+      },
       autoplay: {
         delay: 3500,
         disableOnInteraction: false,
@@ -58,13 +60,19 @@ $(function() {
       breakpoints: {
         768: {
           slidesPerView: 2,
-          slidesPerColumn: 1,
           spaceBetween: 30,
+          // slidesPerColumn: 1,
+          grid: {
+            rows: 1,
+          },
         },
         1200: {
           slidesPerView: 3,
-          slidesPerColumn: 1,
           spaceBetween: 30,
+          // slidesPerColumn: 1,
+          grid: {
+            rows: 1,
+          },
         },
       },
     });
@@ -86,13 +94,16 @@ $(function() {
   if (coursesRecommendSwiper) {
     const swiper = new Swiper(".js-swiper-courses-recommend", {
       slidesPerView: 1,
-      spaceBetween: 0,
+      spaceBetween: 30,
+      centeredSlides: true,
+      loop: true,
       autoplay: {
         delay: 3500,
         disableOnInteraction: false,
       },
       breakpoints: {
         768: {
+          centeredSlides: false,
           slidesPerView: 2,
           spaceBetween: 30,
         },
