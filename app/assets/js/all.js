@@ -4,8 +4,12 @@ $(function() {
     const swiper = new Swiper(".js-swiper-user-recommend", {
       slidesPerView: 1,
       slidesPerColumn: 3,
+      slidesPerColumnFill: 'column',
+      // grid: {
+      //   rows: 2,
+      //   fill: 'column',
+      // },
       spaceBetween: 0,
-      slidesPerColumnFill : 'column',
       autoplay: {
         delay: 3500,
         disableOnInteraction: false,
@@ -18,13 +22,21 @@ $(function() {
         768: {
           slidesPerView: 2,
           slidesPerColumn: 2,
-          slidesPerColumnFill : 'row',
+          slidesPerColumnFill: 'row',
+          // grid: {
+          //   rows: 2,
+          //   fill: 'row',
+          // },
           spaceBetween: 30,
         },
         992: {
           slidesPerView: 3,
           slidesPerColumn: 2,
-          slidesPerColumnFill : 'row',
+          slidesPerColumnFill: 'row',
+          // grid: {
+          //   rows: 2,
+          //   fill: 'row',
+          // },
           spaceBetween: 30,
         },
       },
