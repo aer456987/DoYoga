@@ -63,10 +63,37 @@ $(function () {
     $('.js-scheme-card').on('click', function () {
       var className = $(this).attr('data-name');
       $('.js-scheme-card').removeClass('border-light').addClass('border-transparent');
-      $('.js-scheme-card').find(".material-icons-outlined").addClass('opacity-1');
+      $('.js-scheme-card').find(".material-icons-outlined").addClass('opacity-0.3');
       $(this).removeClass('border-transparent').addClass('border-light');
-      $(this).find(".material-icons-outlined").removeClass('opacity-1');
+      $(this).find(".material-icons-outlined").removeClass('opacity-0.3');
       $('.js-course-class').text(className);
+    });
+  }
+
+  var coursesRecommendSwiper = document.querySelector('.js-swiper-courses-recommend');
+
+  if (coursesRecommendSwiper) {
+    var _swiper2 = new Swiper(".js-swiper-courses-recommend", {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30
+        },
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 30
+        },
+        1200: {
+          slidesPerView: 4,
+          spaceBetween: 30
+        }
+      }
     });
   }
 
@@ -98,11 +125,14 @@ $(function () {
   }
 
   var dateDom = document.querySelector('.js-datepicker-date');
-  var datepicker = new Datepicker(dateDom, {
-    autohide: true,
-    prevArrow: '<',
-    nextArrow: '>',
-    buttonClass: 'btn text-primary fw-normal'
-  });
+
+  if (dateDom) {
+    var datepicker = new Datepicker(dateDom, {
+      autohide: true,
+      prevArrow: '<',
+      nextArrow: '>',
+      buttonClass: 'btn text-primary fw-normal'
+    });
+  }
 });
 //# sourceMappingURL=all.js.map

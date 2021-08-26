@@ -11574,6 +11574,10 @@ fieldset:disabled .btn {
   z-index: 999 !important;
 }
 
+.opacity-0\.3 {
+  opacity: 0.3 !important;
+}
+
 .minw-x9\.7 {
   min-width: 970px !important;
 }
@@ -11587,6 +11591,18 @@ fieldset:disabled .btn {
   }
   .float-sm-none {
     float: none !important;
+  }
+  .overflow-sm-auto {
+    overflow: auto !important;
+  }
+  .overflow-sm-hidden {
+    overflow: hidden !important;
+  }
+  .overflow-sm-visible {
+    overflow: visible !important;
+  }
+  .overflow-sm-scroll {
+    overflow: scroll !important;
   }
   .d-sm-inline {
     display: inline !important;
@@ -13365,6 +13381,18 @@ fieldset:disabled .btn {
   .float-md-none {
     float: none !important;
   }
+  .overflow-md-auto {
+    overflow: auto !important;
+  }
+  .overflow-md-hidden {
+    overflow: hidden !important;
+  }
+  .overflow-md-visible {
+    overflow: visible !important;
+  }
+  .overflow-md-scroll {
+    overflow: scroll !important;
+  }
   .d-md-inline {
     display: inline !important;
   }
@@ -15141,6 +15169,18 @@ fieldset:disabled .btn {
   }
   .float-lg-none {
     float: none !important;
+  }
+  .overflow-lg-auto {
+    overflow: auto !important;
+  }
+  .overflow-lg-hidden {
+    overflow: hidden !important;
+  }
+  .overflow-lg-visible {
+    overflow: visible !important;
+  }
+  .overflow-lg-scroll {
+    overflow: scroll !important;
   }
   .d-lg-inline {
     display: inline !important;
@@ -16919,6 +16959,18 @@ fieldset:disabled .btn {
   .float-xl-none {
     float: none !important;
   }
+  .overflow-xl-auto {
+    overflow: auto !important;
+  }
+  .overflow-xl-hidden {
+    overflow: hidden !important;
+  }
+  .overflow-xl-visible {
+    overflow: visible !important;
+  }
+  .overflow-xl-scroll {
+    overflow: scroll !important;
+  }
   .d-xl-inline {
     display: inline !important;
   }
@@ -18695,6 +18747,18 @@ fieldset:disabled .btn {
   }
   .float-xxl-none {
     float: none !important;
+  }
+  .overflow-xxl-auto {
+    overflow: auto !important;
+  }
+  .overflow-xxl-hidden {
+    overflow: hidden !important;
+  }
+  .overflow-xxl-visible {
+    overflow: visible !important;
+  }
+  .overflow-xxl-scroll {
+    overflow: scroll !important;
   }
   .d-xxl-inline {
     display: inline !important;
@@ -20539,10 +20603,6 @@ fieldset:disabled .btn {
   border-color: transparent !important;
 }
 
-.opacity-1 {
-  opacity: .3;
-}
-
 .cursor-pointer {
   cursor: pointer;
 }
@@ -20551,6 +20611,11 @@ fieldset:disabled .btn {
   -webkit-transition-duration: .2s;
        -o-transition-duration: .2s;
           transition-duration: .2s;
+}
+
+.ratio-1x1 img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .user-select-none {
@@ -20637,20 +20702,6 @@ fieldset:disabled .btn {
 
 .btn-outline-primary:hover {
   color: #F5F0E7;
-}
-
-.card-body-light {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
 }
 
 .swiper-user-recommend {
