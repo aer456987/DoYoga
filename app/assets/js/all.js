@@ -36,8 +36,6 @@ $(function() {
       },
     });
   }
-
-
   const schemeSwiper = document.querySelector('.js-swiper-scheme');
   if (schemeSwiper) {
     const swiper = new Swiper('.js-swiper-scheme', {
@@ -80,7 +78,6 @@ $(function() {
       $('.js-course-class').text(className);
     });
   }
-
   const coursesRecommendSwiper = document.querySelector('.js-swiper-courses-recommend');
   if (coursesRecommendSwiper) {
     const swiper = new Swiper('.js-swiper-courses-recommend', {
@@ -111,7 +108,6 @@ $(function() {
       },
     });
   }
-
   const teachersSwiper = document.querySelector('.js-swiper-teachers');
   if (teachersSwiper) {
     const swiper = new Swiper('.js-swiper-teachers', {
@@ -200,4 +196,5 @@ $(function() {
   }
 
 
+  AOS.init();
 });
