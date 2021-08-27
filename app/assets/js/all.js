@@ -186,4 +186,19 @@ $(function() {
       buttonClass: 'btn btn-outline-primary border-0 fw-normal',
     });
   }
+
+
+
+  // js-course-modal-btn
+  const openModalBtn = document.querySelector('.js-course-modal-btn');
+  if(openModalBtn) {
+    const courseModal = new bootstrap.Modal(document.querySelector('.js-course-modal'));
+    courseModal.show();
+
+    $(openModalBtn).on('click', function() {
+      courseModal.show();
+    });
+  }
+
+
 });

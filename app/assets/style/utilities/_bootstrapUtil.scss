@@ -2,6 +2,11 @@
 $utilities: map-merge(
   $utilities,
   (
+    "min-width": (
+      property: min-width,
+      class: minw,
+      values: (x9\.7: 970px)
+    ),
     "overflow-x": (
       property: overflow-x,
       values: auto hidden visible scroll,
@@ -21,10 +26,11 @@ $utilities: map-merge(
         0\.3: .3,
       )
     ),
-    "min-width": (
-      property: min-width,
-      class: minw,
-      values: (x9\.7: 970px)
+    "ratio": (
+      property: --bs-aspect-ratio,
+      class: ratio,
+      responsive: true,
+      values: ($aspect-ratios),
     ),
     "overflow":
       map-merge(
