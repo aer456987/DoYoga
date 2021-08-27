@@ -4,10 +4,8 @@ $(function() {
     const swiper = new Swiper('.js-swiper-user-recommend', {
       slidesPerView: 1,
       spaceBetween: 0,
-      // slidesPerColumn: 3,             // swiper 6 寫法
-      // slidesPerColumnFill: 'column',  // swiper 6 寫法
       grid: {
-        rows: 3,                         // swiper 7 寫法
+        rows: 3,
         fill: 'column',
       },
       autoplay: {
@@ -21,8 +19,6 @@ $(function() {
       breakpoints: {
         768: {
           slidesPerView: 2,
-          // slidesPerColumn: 2,
-          // slidesPerColumnFill: 'row',
           grid: {
             rows: 2,
             fill: 'row',
@@ -31,8 +27,6 @@ $(function() {
         },
         992: {
           slidesPerView: 3,
-          // slidesPerColumn: 2,
-          // slidesPerColumnFill: 'row',
           grid: {
             rows: 2,
             fill: 'row',
@@ -49,7 +43,6 @@ $(function() {
     const swiper = new Swiper('.js-swiper-scheme', {
       slidesPerView: 1,
       spaceBetween: 0,
-      // slidesPerColumn: 3,
       grid: {
         rows: 3,
       },
@@ -61,7 +54,6 @@ $(function() {
         768: {
           slidesPerView: 2,
           spaceBetween: 30,
-          // slidesPerColumn: 1,
           grid: {
             rows: 1,
           },
@@ -69,7 +61,6 @@ $(function() {
         1200: {
           slidesPerView: 3,
           spaceBetween: 30,
-          // slidesPerColumn: 1,
           grid: {
             rows: 1,
           },
@@ -189,9 +180,11 @@ $(function() {
   if (dateDom) {
     const datepicker = new Datepicker(dateDom, {
       autohide: true,
-      prevArrow: '<',
+      daysOfWeekDisabled: [0],
+      format: 'yyyy/mm/dd',
       nextArrow: '>',
-      buttonClass: 'btn text-primary fw-normal'
+      prevArrow: '<',
+      buttonClass: 'btn btn-outline-primary border-0 fw-normal',
     });
   }
 });
