@@ -181,7 +181,6 @@ $(function() {
     const datepicker = new Datepicker(dateDom, {
       autohide: true,
       daysOfWeekDisabled: [0],
-      format: 'yyyy/mm/dd',
       nextArrow: '>',
       prevArrow: '<',
       buttonClass: 'btn btn-outline-primary border-0 fw-normal',
