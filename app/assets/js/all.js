@@ -196,5 +196,7 @@ $(function() {
   }
 
 
-  AOS.init();
+  AOS.init({
+    offset: 100,
+  });
 });
