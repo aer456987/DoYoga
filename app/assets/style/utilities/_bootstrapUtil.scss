@@ -99,6 +99,21 @@ $utilities: map-merge(
             ),
         )
       ),
+    "max-width":
+      map-merge(
+        map-get($utilities, "max-width"),
+        (
+          responsive: true,
+          values:
+            map-merge(
+              map-get(map-get($utilities, "max-width"), "values"),
+              (
+                x6\.9:  690px,
+                x9\.2:  920px,
+              )
+            ),
+        )
+      ),
     "margin-start":
       map-merge(
         map-get($utilities, "margin-start"),
