@@ -9,10 +9,12 @@ $utilities: map-merge(
     ),
     "overflow-x": (
       property: overflow-x,
+      class: overflow-x,
       values: auto hidden visible scroll,
     ),
     "z-index": (
       property: z-index,
+      class: z-index,
       values: (
         n1: -1,
         1: 1,
@@ -22,6 +24,7 @@ $utilities: map-merge(
     ),
     "opacity": (
       property: opacity,
+      class: opacity,
       values: (
         0\.3: .3,
       )
@@ -31,6 +34,57 @@ $utilities: map-merge(
       class: ratio,
       responsive: true,
       values: ($aspect-ratios),
+    ),
+    "user-select": (
+      property: user-select,
+      class: user-select,
+      values: (none),
+    ),
+    "background-size": (
+      property: background-size,
+      class: bg-size,
+      values: (contain, cover),
+    ),
+    "background-position": (
+      property: background-position,
+      class: bg-position,
+      values: (
+        top:    top,
+        bottom: bottom,
+        start:  left,
+        end:    right,
+        center: center,
+      ),
+    ),
+    "background-repeat": (
+      property: background-repeat,
+      class: bg-repeat,
+      values: (
+        no-repeat: no-repeat,
+      ),
+    ),
+    "background-attachment": (
+      property: background-attachment,
+      class: bg-attachment,
+      values: (
+        scroll: scroll,
+        fixed: fixed,
+        local: local,
+        local-scroll: local scroll,
+        scroll-local: scroll local,
+      ),
+    ),
+    "transition-duration": (
+      property: transition-duration,
+      class: transition-duration,
+      values: (
+        0\.2: .2s,
+      ),
+    ),
+    "cursor": (
+      property: cursor,
+      class: cursor,
+      values: (pointer),
     ),
     "overflow":
       map-merge(
