@@ -86,6 +86,13 @@ $utilities: map-merge(
       class: cursor,
       values: (pointer),
     ),
+    "font-size":
+      map-merge(
+        map-get($utilities, "font-size"),
+        (
+          responsive: true,
+        )
+      ),
     "overflow":
       map-merge(
         map-get($utilities, "overflow"),

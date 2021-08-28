@@ -197,6 +197,6 @@ $(function() {
 
 
   AOS.init({
-    offset: 100,
+    offset: 50,
   });
 });
