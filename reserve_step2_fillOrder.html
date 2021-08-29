@@ -4,28 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>預約課程 - 填寫資料</title>
-    <script>
-      (function(d) {
-        var config = {
-          kitId: 'xco0ggz',
-          scriptTimeout: 3000,
-          async: true
-        },
-        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-      })(document);
-    </script>
+    <title>填寫預約資料-預約課程-DOYOGA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.css" /> -->
+
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
     />
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
+
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
-  <body class="overflow-x-hidden">
+  <body>
     <ul class="position-fixed top-50 end-0 translate-middle
   d-none d-lg-block
   z-index-3"
@@ -64,9 +58,17 @@
       z-index-999
       shadow-sm
       position-sticky top-0"
-      
+      data-aos="fade-down"
+      data-aos-duration="800"
+      data-aos-delay="200"
     >
-      <div class="container">
+      <div
+  class="container"
+  data-aos="fade"
+  data-aos-duration="750"
+  data-aos-easing="ease-in"
+  data-aos-delay="900"
+>
   <h1 class="h6">
     <a
       href="./index.html"
@@ -154,23 +156,49 @@
     
 <main class="pt-6 pt-md-8 pb-11 pb-md-10 pb-lg-13">
   <section class="container">
-    <h2 class="fs-3 text-primary text-center mb-3 mb-md-2">
-      立即預約
-    </h2>
+
+    <div class="overflow-hidden mb-3 mb-md-2">
+      <h2
+        class="fs-3 text-primary text-center"
+        data-aos="fade-up"
+        data-aos-duration="900"
+        data-aos-easing="ease"
+      >
+        立即預約
+      </h2>
+    </div>
 
     <ul class="row justify-content-center">
-      <li class="col-4 col-md-3 col-lg-2">
-        <div class="text-primary bg-secondary rounded-pill text-center py-1.5 px-1">
+      <li class="col-4 col-md-3 col-lg-2 overflow-hidden">
+        <div
+          class="text-primary bg-secondary rounded-pill text-center py-1.5 px-1"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-easing="ease-out"
+          data-aos-delay="250"
+        >
           選擇方案
         </div>
       </li>
-      <li class="col-4 col-md-3 col-lg-2">
-        <div class="text-light bg-primary rounded-pill text-center py-1.5 px-1">
+      <li class="col-4 col-md-3 col-lg-2  overflow-hidden">
+        <div
+          class="text-light bg-primary rounded-pill text-center py-1.5 px-1"
+          data-aos="fade-right"
+          data-aos-duration="1300"
+          data-aos-easing="ease-out"
+          data-aos-delay="350"
+        >
           填寫資料
         </div>
       </li>
-      <li class="col-4 col-md-3 col-lg-2">
-        <div class="text-primary bg-secondary rounded-pill text-center py-1.5 px-1">
+      <li class="col-4 col-md-3 col-lg-2 overflow-hidden">
+        <div
+          class="text-primary bg-secondary rounded-pill text-center py-1.5 px-1"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+          data-aos-easing="ease-out"
+          data-aos-delay="450"
+        >
           完成預約
         </div>
       </li>
@@ -181,8 +209,12 @@
       method="POST"
       class="pt-4 pt-md-3 pt-lg-4"
     >
-      <h3 class="fs-5 fw-light text-primary-light text-center
-        mb-3 mb-lg-4"
+      <h3
+        class="fs-5 fw-light text-primary-light text-center mb-3 mb-lg-4"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        data-aos-easing="ease-out"
+        data-aos-delay="250"
       >
         <span class="fs-7 text-dark me-2">
           你選擇的是
@@ -194,42 +226,70 @@
         <div class="col-md-6 col-lg-4">
           <ul class="text-dark mb-4">
             <li class="mb-4">
-              <p class="mb-2">1. 是否接觸過瑜珈?</p>
-
-              <label
-                for="yogaYesRadio"
-                class="form-label me-4"
+              <p
+                class="mb-2"
+                data-aos="fade-up"
+                data-aos-duration="900"
+                data-aos-easing="ease"
               >
-                <input
-                  type="radio"
-                  name="practiseYogaRadio"
-                  value="接觸過瑜珈"
-                  id="yogaYesRadio"
-                  class="form-check-input"
-                  checked
-                >
-                是
-              </label>
+                1. 是否接觸過瑜珈?
+              </p>
 
-              <label
-                for="yogaNoRadio"
-                class="form-label"
+              <div
+                data-aos="fade-up"
+                data-aos-duration="900"
+                data-aos-easing="ease"
+                data-aos-delay="100"
               >
-                <input
-                  type="radio"
-                  name="practiseYogaRadio"
-                  value="沒接觸過瑜珈"
-                  id="yogaNoRadio"
-                  class="form-check-input"
+                <label
+                  for="yogaYesRadio"
+                  class="form-label me-4"
                 >
-                否
-              </label>
+                  <input
+                    type="radio"
+                    name="practiseYogaRadio"
+                    value="接觸過瑜珈"
+                    id="yogaYesRadio"
+                    class="form-check-input"
+                    checked
+                  >
+                  是
+                </label>
+
+                <label
+                  for="yogaNoRadio"
+                  class="form-label"
+                >
+                  <input
+                    type="radio"
+                    name="practiseYogaRadio"
+                    value="沒接觸過瑜珈"
+                    id="yogaNoRadio"
+                    class="form-check-input"
+                  >
+                  否
+                </label>
+              </div>
             </li>
 
-            <li class="mb-4">
-              <p class="mb-2">2. 想改善的生活問題?</p>
+            <li
+              class="mb-4"
+            >
+              <p
+                class="mb-2"
+                data-aos="fade-up"
+                data-aos-duration="900"
+                data-aos-easing="ease"
+              >
+                2. 想改善的生活問題?
+              </p>
 
-              <ul>
+              <ul
+                data-aos="fade-up"
+                data-aos-duration="900"
+                data-aos-easing="ease"
+                data-aos-delay="100"
+              >
                 <li class="mb-2">
                   <label
                     for="muscleEndurance"
@@ -321,9 +381,21 @@
             </li>
 
             <li class="mb-4">
-              <p class="mb-2">3. 每週累積運動量約為多少？</p>
+              <p
+                class="mb-2"
+                data-aos="fade-up"
+                data-aos-duration="900"
+                data-aos-easing="ease"
+              >
+                3. 每週累積運動量約為多少？
+              </p>
 
-              <ul>
+              <ul
+                data-aos="fade-up"
+                data-aos-duration="900"
+                data-aos-easing="ease"
+                data-aos-delay="100"
+              >
                 <li>
                   <label
                     for="sportsTime_1"
@@ -391,6 +463,9 @@
               <label
                 for="reserveDate"
                 class="mb-1"
+                data-aos="fade-up"
+                data-aos-duration="900"
+                data-aos-easing="ease"
               >
                 4. 上課預約報到日
                 <small class="mt-0.5 d-block">
@@ -403,13 +478,29 @@
                 placeholder="MM/DD/YYYY"
                 id="reserveDate"
                 class="form-control js-datepicker-date w-auto text-primary"
+                data-aos="fade-up"
+                data-aos-duration="900"
+                data-aos-easing="ease"
+                data-aos-delay="100"
               >
             </li>
 
             <li>
-              <p class="mb-2">5. 填寫基本資料，完成預約後會寄送通知至電子信箱</p>
+              <p
+                class="mb-2"
+                data-aos="fade-up"
+                data-aos-duration="900"
+                data-aos-easing="ease"
+              >
+                5. 填寫基本資料，完成預約後會寄送通知至電子信箱
+              </p>
 
-              <ul class="text-primary">
+              <ul
+                class="text-primary"
+                data-aos="fade-up"
+                data-aos-duration="900"
+                data-aos-easing="ease"
+              >
                 <li class="mb-2">
                   <div class="row">
                     <div class="col-6">
@@ -497,12 +588,18 @@
             </li>
           </ul>
 
-          <a
-            href="./reserve_step3_reserveFinish.html"
-            class="btn btn-primary-light py-1 w-100"
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="500"
+            data-aos-easing="ease-out"
           >
-            送出
-          </a>
+            <a
+              href="./reserve_step3_reserveFinish.html"
+              class="btn btn-primary-light py-1 w-100"
+            >
+              送出
+            </a>
+          </div>
         </div>
       </div>
 
@@ -510,21 +607,17 @@
   </section>
 </main>
 
-    <!-- <div>
-  <h1 class="d-block d-sm-none p-4 border text-secondary">ssm 模式</h1>
-  <h1 class="d-none d-sm-block d-md-none p-4 border text-secondary">sm 模式</h1>
-  <h1 class="d-none d-md-block d-lg-none p-4 border text-secondary">md 模式</h1>
-  <h1 class="d-none d-lg-block d-xl-none p-4 border text-secondary">lg 模式</h1>
-  <h1 class="d-none d-xl-block d-xxl-none p-4 border text-secondary">xl 模式</h1>
-  <h1 class="d-none d-xxl-block d-none p-4 border text-secondary">xxl 模式</h1>
-</div> -->
-
     <footer class="text-light bg-primary">
   <div class="border-bottom border-light py-3 py-md-4">
     <div class="container">
       <div class="row justify-content-between">
         <div class="col-lg-6">
-          <h3 class="fw-light mb-1">
+          <h3
+          class="fw-light mb-1"
+          data-aos="fade-right"
+          data-aos-duration="500"
+          data-aos-easing="ease-in"
+          >
             現在訂閱，獲得課程優惠碼！
           </h3>
         </div>
@@ -532,7 +625,12 @@
         <div class="col-lg-4">
           <div class="row">
             <div class="col-md-6 col-lg-12">
-              <div class="input-group">
+              <div
+                class="input-group"
+                data-aos="fade-left"
+                data-aos-duration="500"
+                data-aos-easing="ease-in"
+              >
                 <input
                   type="email"
                   id="subscriptionEmail"
@@ -559,7 +657,12 @@
   <div class="py-4">
     <div class="container">
       <div class="d-flex justify-content-between">
-        <h4 class="h6">
+        <h4
+          class="h6"
+          data-aos="fade-right"
+          data-aos-duration="500"
+          data-aos-easing="ease-in"
+        >
           <a
             href="./index.html"
             class="navbar-brand logo logo-img-white
@@ -573,7 +676,12 @@
           </a>
         </h4>
 
-        <ul class="d-flex">
+        <ul
+          class="d-flex"
+          data-aos="fade-left"
+          data-aos-duration="500"
+          data-aos-easing="ease-in"
+        >
           <li>
             <a
               href="#"
@@ -604,7 +712,12 @@
       <div class="row">
         <div class="col-md-3">
           <ul class="navbar-nav">
-            <li class="nav-item">
+            <li
+              class="nav-item"
+              data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-easing="ease-in"
+            >
               <a
                 href="./courseDescription.html"
                 class="nav-link link-light fw-lighter py-0.5"
@@ -612,7 +725,13 @@
                 課程介紹
               </a>
             </li>
-            <li class="nav-item">
+            <li
+              class="nav-item"
+              data-aos="fade-right"
+              data-aos-duration="600"
+              data-aos-easing="ease-in"
+              data-aos-offset="0"
+            >
               <a
                 href="./classroom.html"
                 class="nav-link link-light fw-lighter py-0.5"
@@ -620,7 +739,13 @@
                 瑜珈空間
               </a>
             </li>
-            <li class="nav-item">
+            <li
+              class="nav-item"
+              data-aos="fade-right"
+              data-aos-duration="700"
+              data-aos-easing="ease-in"
+              data-aos-offset="0"
+            >
               <a
                 href="./curriculum.html"
                 class="nav-link link-light fw-lighter pt-0.5 pb-1 pb-md-0"
@@ -632,12 +757,26 @@
         </div>
 
         <div class="col-md-6 d-none d-md-flex justify-content-center align-items-end">
-          <p class="fw-light">
+          <p
+            class="fw-light"
+            data-aos="fade"
+            data-aos-duration="900"
+            data-aos-easing="ease-in"
+            data-aos-offset="0"
+            deta-aso-delay="100"
+          >
             © 2021. All Rights Reserved.
           </p>
         </div>
 
-        <p class="fw-light d-md-none">
+        <p
+          class="fw-light d-md-none"
+          data-aos="fade"
+          data-aos-duration="900"
+          data-aos-easing="ease-in"
+          data-aos-offset="0"
+          deta-aso-delay="100"
+        >
           © 2021. All Rights Reserved.
         </p>
       </div>
@@ -646,9 +785,65 @@
   </div>
 </footer>
 
-    
+    <div
+  class="modal fade js-course-modal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered
+    mw-md-x6.9 mw-lg-x9.2"
+  >
+    <div class="modal-content">
+      <div class="modal-body
+        py-4 py-md-9
+        ps-md-3 px-lg-7
+        pe-md-4"
+      >
+        <div class="row align-items-center">
+          <div class="col-md-5 col-lg-6">
+            <div class="ratio ratio-1x1 ratio-md-12x19 ratio-lg-1x1">
+              <img
+                src="./assets/images/course/course-11.jpg"
+                alt="課程圖片"
+                class="rounded-pill"
+              >
+            </div>
+          </div>
+          <div class="col-md-7 col-lg-6 pt-2 pt-md-0">
+            <h3 class="fs-3">
+              基礎 Basic
+            </h3>
+            <p class="mb-2">
+              授課老師：Carol Tang
+              <span class="badge rounded-pill
+                fs-8 lh-base fw-lighter text-light
+                bg-primary
+                ms-1.5 px-2 py-0.5"
+              >
+                60 min
+              </span>
+            </p>
+
+            <p class="mb-2">
+              使用掛布懸掛在半空，進行哈達瑜珈體位法練習，藉由地心引力的重力原理，鍛鍊核心肌群，舒緩脊椎壓力。 訓練身體協調性，深層放鬆身體。 課堂裡老師會視同學狀況安排教導倒立動作，對於不敢嘗試倒立的同學來說，藉由掛布的支持與保護，加上老師細心指導，讓同學能更快掌握。
+            </p>
+
+            <a
+              href="./reserve_step1-1_selectCourse.html"
+              class="btn btn-secondary"
+            >
+              立即預約
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script> -->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>

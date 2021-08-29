@@ -7,11 +7,8 @@ $(function () {
     var swiper = new Swiper('.js-swiper-user-recommend', {
       slidesPerView: 1,
       spaceBetween: 0,
-      // slidesPerColumn: 3,             // swiper 6 寫法
-      // slidesPerColumnFill: 'column',  // swiper 6 寫法
       grid: {
         rows: 3,
-        // swiper 7 寫法
         fill: 'column'
       },
       autoplay: {
@@ -25,8 +22,6 @@ $(function () {
       breakpoints: {
         768: {
           slidesPerView: 2,
-          // slidesPerColumn: 2,
-          // slidesPerColumnFill: 'row',
           grid: {
             rows: 2,
             fill: 'row'
@@ -35,8 +30,6 @@ $(function () {
         },
         992: {
           slidesPerView: 3,
-          // slidesPerColumn: 2,
-          // slidesPerColumnFill: 'row',
           grid: {
             rows: 2,
             fill: 'row'
@@ -53,7 +46,6 @@ $(function () {
     var _swiper = new Swiper('.js-swiper-scheme', {
       slidesPerView: 1,
       spaceBetween: 0,
-      // slidesPerColumn: 3,
       grid: {
         rows: 3
       },
@@ -65,7 +57,6 @@ $(function () {
         768: {
           slidesPerView: 2,
           spaceBetween: 30,
-          // slidesPerColumn: 1,
           grid: {
             rows: 1
           }
@@ -73,7 +64,6 @@ $(function () {
         1200: {
           slidesPerView: 3,
           spaceBetween: 30,
-          // slidesPerColumn: 1,
           grid: {
             rows: 1
           }
@@ -190,10 +180,27 @@ $(function () {
   if (dateDom) {
     var datepicker = new Datepicker(dateDom, {
       autohide: true,
-      prevArrow: '<',
+      daysOfWeekDisabled: [0],
       nextArrow: '>',
-      buttonClass: 'btn text-primary fw-normal'
+      prevArrow: '<',
+      buttonClass: 'btn btn-outline-primary border-0 fw-normal'
     });
   }
+
+  var openModalBtn = document.querySelectorAll('.js-course-modal-btn');
+
+  if (openModalBtn) {
+    var courseModal = new bootstrap.Modal(document.querySelector('.js-course-modal'));
+    openModalBtn.forEach(function (item) {
+      $(item).on('click', function () {
+        courseModal.show();
+      });
+    });
+  }
+
+  AOS.init({
+    offset: 50,
+    once: true
+  });
 });
 //# sourceMappingURL=all.js.map
