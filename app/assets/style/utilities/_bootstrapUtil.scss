@@ -2,11 +2,6 @@
 $utilities: map-merge(
   $utilities,
   (
-    "overflow-x": (
-      property: overflow-x,
-      class: overflow-x,
-      values: auto hidden visible scroll,
-    ),
     "min-width": (
       property: min-width,
       class: minw,
@@ -22,16 +17,13 @@ $utilities: map-merge(
     "background-size": (
       property: background-size,
       class: bg-size,
-      values: (contain, cover),
+      values: (cover),
     ),
     "background-position": (
       property: background-position,
       class: bg-position,
       values: (
-        top:    top,
         bottom: bottom,
-        start:  left,
-        end:    right,
         center: center,
       ),
     ),
@@ -46,11 +38,7 @@ $utilities: map-merge(
       property: background-attachment,
       class: bg-attachment,
       values: (
-        scroll: scroll,
         fixed: fixed,
-        local: local,
-        local-scroll: local scroll,
-        scroll-local: scroll local,
       ),
     ),
     "transition-duration": (
@@ -64,7 +52,6 @@ $utilities: map-merge(
       property: z-index,
       class: z-index,
       values: (
-        n1: -1,
         1: 1,
         3: 3,
         999: 999,
@@ -76,11 +63,6 @@ $utilities: map-merge(
       values: (
         0\.3: .3,
       )
-    ),
-    "user-select": (
-      property: user-select,
-      class: user-select,
-      values: (none),
     ),
     "cursor": (
       property: cursor,
