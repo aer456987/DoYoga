@@ -2,43 +2,22 @@
 $utilities: map-merge(
   $utilities,
   (
-    "min-width": (
-      property: min-width,
-      class: minw,
-      values: (x9\.7: 970px)
-    ),
     "overflow-x": (
       property: overflow-x,
       class: overflow-x,
       values: auto hidden visible scroll,
     ),
-    "z-index": (
-      property: z-index,
-      class: z-index,
-      values: (
-        n1: -1,
-        1: 1,
-        3: 3,
-        999: 999,
-      )
+    "min-width": (
+      property: min-width,
+      class: minw,
+      values: (x9\.7: 970px)
     ),
-    "opacity": (
-      property: opacity,
-      class: opacity,
-      values: (
-        0\.3: .3,
-      )
-    ),
+    
     "ratio": (
       property: --bs-aspect-ratio,
       class: ratio,
       responsive: true,
       values: ($aspect-ratios),
-    ),
-    "user-select": (
-      property: user-select,
-      class: user-select,
-      values: (none),
     ),
     "background-size": (
       property: background-size,
@@ -81,18 +60,33 @@ $utilities: map-merge(
         0\.2: .2s,
       ),
     ),
+    "z-index": (
+      property: z-index,
+      class: z-index,
+      values: (
+        n1: -1,
+        1: 1,
+        3: 3,
+        999: 999,
+      )
+    ),
+    "opacity": (
+      property: opacity,
+      class: opacity,
+      values: (
+        0\.3: .3,
+      )
+    ),
+    "user-select": (
+      property: user-select,
+      class: user-select,
+      values: (none),
+    ),
     "cursor": (
       property: cursor,
       class: cursor,
       values: (pointer),
     ),
-    "font-size":
-      map-merge(
-        map-get($utilities, "font-size"),
-        (
-          responsive: true,
-        )
-      ),
     "overflow":
       map-merge(
         map-get($utilities, "overflow"),
@@ -105,7 +99,6 @@ $utilities: map-merge(
         map-get($utilities, "height"),
         (
           responsive: true,
-          // 沒有的屬性，可以直接加上，不用使用下面的 map-merge map-get 去取得原本的值，然後再合併
           values:
             map-merge(
               map-get(map-get($utilities, "height"), "values"),
@@ -147,7 +140,6 @@ $utilities: map-merge(
         map-get($utilities, "width"),
         (
           responsive: true,
-          // 沒有的屬性，可以直接加上，不用使用下面的 map-merge map-get 去取得原本的值，然後再合併
           values:
             map-merge(
               map-get(map-get($utilities, "width"), "values"),
@@ -199,6 +191,14 @@ $utilities: map-merge(
                 n1\.85: -185%,
               )
             ),
+        )
+      ),
+    "font-size":
+      map-merge(
+        map-get($utilities, "font-size"),
+        (
+          responsive: true,
+          rfs: false,
         )
       ),
   )
