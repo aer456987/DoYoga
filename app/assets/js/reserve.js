@@ -13,13 +13,12 @@ $('.js-experience-cards').on('click', function() {
   const unCilckExperienceClass = 'd-none d-lg-block';
 
   $('.js-experience-card').removeClass(onCilckCardClass).addClass(unCilckCardClass);
+  $('.js-experience-cards').removeClass(onCilckExperienceClass).toggleClass(unCilckExperienceClass);
 
-  $('.js-experience-cards').removeClass(onCilckExperienceClass).addClass(unCilckExperienceClass);
+  $(this).toggleClass(unCilckExperienceClass).toggleClass(onCilckExperienceClass);
+  $(this).find('.js-experience-card').toggleClass(unCilckCardClass).toggleClass(onCilckCardClass);
 
-  $(this).removeClass(unCilckExperienceClass).addClass(onCilckExperienceClass);
-  $(this).find('.js-experience-card').removeClass(unCilckCardClass).addClass(onCilckCardClass);
-
-  $('.js-scheme-show').slideDown();
+  $('.js-scheme-show').slideUp().slideDown();
   $('.js-scheme-name-show').slideDown();
   $('.js-next-step').show();
 
