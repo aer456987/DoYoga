@@ -1,9 +1,7 @@
 const schemeCards = document.querySelectorAll('.js-scheme-card');
 
-$('.js-scheme-show').slideUp();
-$('.js-scheme-name-show').slideUp();
-
-
+$('.js-scheme-show').hide();
+$('.js-scheme-name-show').hide();
 
 $('.js-experience-cards').on('click', function() {
   const courseName = $(this).attr('data-name');
