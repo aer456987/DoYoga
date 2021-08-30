@@ -1,8 +1,8 @@
 ---
-title: 初次體驗課程-選擇瑜珈課程-DOYOGA
+title: 選擇瑜珈課程-DOYOGA
 layout: ./app/layout.ejs
 engine: ejs
-current: reserve_step1-2_firstExperience
+current: reserve_step1_selectCourse
 ---
 
 <main class="pt-6 pt-md-8 pb-11 pb-md-10 pb-lg-13">
@@ -58,13 +58,15 @@ current: reserve_step1-2_firstExperience
 
     <ul class="row align-items-center">
       <li
-        class="col-lg-4 arrow"
+        class="js-experience-cards col-lg-4"
         data-aos="fade-up"
         data-aos-duration="700"
         data-aos-easing="ease-out"
         data-aos-delay="300"
+        data-name="首次體驗"
       >
-        <div class="card d-none d-md-block d-lg-none
+        <div class="card js-experience-card
+          d-none d-md-block d-lg-none
           overflow-hidden
           border border-primary-light border-4
           cursor-pointer"
@@ -102,9 +104,10 @@ current: reserve_step1-2_firstExperience
           </div>
         </div>
 
-        <div class="card d-md-none d-lg-block
+        <div class="card js-experience-card
+          d-md-none d-lg-block
           overflow-hidden
-          border border-primary-light border-4
+          border border-primary-light
           cursor-pointer"
         >
           <div class="position-relative overflow-hidden ratio ratio-7x5">
@@ -137,13 +140,15 @@ current: reserve_step1-2_firstExperience
       </li>
 
       <li
-        class="col-lg-4 d-none d-lg-block"
+        class="js-experience-cards col-lg-4 d-none d-lg-block"
         data-aos="fade-up"
         data-aos-duration="700"
         data-aos-easing="ease-out"
         data-aos-delay="400"
+        data-name="短期體驗"
       >
-        <div class="card d-none d-md-block d-lg-none
+        <div class="card js-experience-card
+          d-none d-md-block d-lg-none
           overflow-hidden
           border border-primary-light
           hover-scale-1
@@ -184,7 +189,8 @@ current: reserve_step1-2_firstExperience
           </div>
         </div>
 
-        <div class="card d-md-none d-lg-block
+        <div class="card js-experience-card
+          d-md-none d-lg-block
           overflow-hidden
           border border-primary-light
           hover-scale-1
@@ -222,13 +228,15 @@ current: reserve_step1-2_firstExperience
       </li>
 
       <li
-        class="col-lg-4 d-none d-lg-block"
+        class="js-experience-cards col-lg-4 d-none d-lg-block"
         data-aos="fade-up"
         data-aos-duration="700"
         data-aos-easing="ease-out"
         data-aos-delay="500"
+        data-name="長期體驗"
       >
-        <div class="card d-none d-md-block d-lg-none
+        <div class="card js-experience-card
+          d-none d-md-block d-lg-none
           overflow-hidden
           border border-primary-light
           hover-scale-1
@@ -269,7 +277,8 @@ current: reserve_step1-2_firstExperience
           </div>
         </div>
 
-        <div class="card d-md-none d-lg-block
+        <div class="card js-experience-card
+          d-md-none d-lg-block
           overflow-hidden
           border border-primary-light
           hover-scale-1
@@ -309,11 +318,11 @@ current: reserve_step1-2_firstExperience
   </section>
 
   <section
-    class="bg-primary pt-4 pt-lg-5 pb-6 pb-lg-8"
+    class="js-scheme-show bg-primary"
     data-aos="fade-up"
     data-aos-duration="1000"
   >
-    <div class="container">
+    <div class="container pt-4 pt-lg-5 pb-6 pb-lg-8">
 
       <div class="overflow-hidden  mb-3 mb-lg-4">
         <h2
@@ -465,18 +474,22 @@ current: reserve_step1-2_firstExperience
     <div class="row align-items-center flex-column">
       <div class="col-md-8 col-lg-6 mb-4 text-center">
 
-        <div class="overflow-hidden mb-5">
-          <h4
-            class="fs-5 d-inline-block border-bottom border-2 border-primary"
+        <div class="js-scheme-name-show overflow-hidden mb-5">
+          <div
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-easing="ease"
           >
-            <span class="fs-7 d-block mb-0.5">
+            <p class="fs-7 d-block mb-0.5">
               你選擇的是
-            </span>
-            首次體驗課程-<span class="js-course-class">基礎</span>
-          </h4>
+            </p>
+            <h4 class="js-choose-class-name fs-5
+              d-inline-block
+              border-bottom border-2 border-primary"
+            >
+              <span class="js-course-name">首次體驗</span>課程-<span class="js-course-scheme">基礎</span>
+            </h4>
+          </div>
         </div>
 
 
