@@ -7,7 +7,6 @@ $utilities: map-merge(
       class: minw,
       values: (x9\.7: 970px)
     ),
-    
     "ratio": (
       property: --bs-aspect-ratio,
       class: ratio,
@@ -47,6 +46,16 @@ $utilities: map-merge(
       values: (
         0\.2: .2s,
       ),
+    ),
+    "text-shadow": (
+      property: text-shadow,
+      class: text-shadow,
+      values: (
+        null: 0 0 5px #000000,
+        sm: $box-shadow-sm,
+        lg: $box-shadow-lg,
+        none: none,
+      )
     ),
     "z-index": (
       property: z-index,
