@@ -5,38 +5,22 @@ $('.js-scheme-name-show').hide();
 
 $('.js-experience-cards').on('click', function() {
   const courseName = $(this).attr('data-name');
-  const onCilckCard = 'border-4';
-  const unCilckCard = 'hover-scale-1 hover-shadow transition-duration-0.2';
-  const onCilckExperience = 'arrow';
-  const unCilckExperience = 'd-none d-lg-block';
+  const onCilckCardClass = 'border-4';
+  const unCilckCardClass = 'hover-scale-1 hover-shadow transition-duration-0.2';
+  const onCilckExperienceClass = 'arrow';
+  const unCilckExperienceClass = 'd-none d-lg-block';
 
-  $('.js-experience-card').removeClass(onCilckCard).addClass(unCilckCard);
+  $('.js-experience-card').removeClass(onCilckCardClass).addClass(unCilckCardClass);
 
-  $('.js-experience-cards').removeClass(onCilckExperience).addClass(unCilckExperience);
+  $('.js-experience-cards').removeClass(onCilckExperienceClass).addClass(unCilckExperienceClass);
 
-  $(this).removeClass(unCilckExperience).addClass(onCilckExperience);
-  $(this).find('.js-experience-card').removeClass(unCilckCard).addClass(onCilckCard);
-
+  $(this).removeClass(unCilckExperienceClass).addClass(onCilckExperienceClass);
+  $(this).find('.js-experience-card').removeClass(unCilckCardClass).addClass(onCilckCardClass);
 
   $('.js-scheme-show').slideDown();
   $('.js-scheme-name-show').slideDown();
 
-
-
-
-
-  // 選取
-  // col-lg-4 arrow
-
-  // 未選取
-  // col-lg-4 d-none d-lg-block
-
-
-  // console.log($(this).find('.js-experience-cards'));
-  // console.log($(this).find('.card'));
-
   $('.js-course-name').text(courseName);
-
 });
 
 
