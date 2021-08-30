@@ -2,6 +2,8 @@ const schemeCards = document.querySelectorAll('.js-scheme-card');
 
 $('.js-scheme-show').hide();
 $('.js-scheme-name-show').hide();
+$('.js-next-step').hide();
+
 
 $('.js-experience-cards').on('click', function() {
   const courseName = $(this).attr('data-name');
@@ -19,6 +21,7 @@ $('.js-experience-cards').on('click', function() {
 
   $('.js-scheme-show').slideDown();
   $('.js-scheme-name-show').slideDown();
+  $('.js-next-step').show();
 
   $('.js-course-name').text(courseName);
 });
