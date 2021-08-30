@@ -73,74 +73,51 @@ current: reserve_step2_fillOrder
         首次體驗課程-基礎
       </h3>
 
-      <div class="row justify-content-center">
+      <div
+        class="row justify-content-center"
+        data-aos="fade-up"
+        data-aos-duration="900"
+        data-aos-easing="ease"
+      >
         <div class="col-md-6 col-lg-4">
           <ul class="text-dark mb-4">
             <li class="mb-4">
-              <p
-                class="mb-2"
-                data-aos="fade-up"
-                data-aos-duration="900"
-                data-aos-easing="ease"
-              >
-                1. 是否接觸過瑜珈?
-              </p>
+              <p class="mb-2">1. 是否接觸過瑜珈?</p>
 
-              <div
-                data-aos="fade-up"
-                data-aos-duration="900"
-                data-aos-easing="ease"
-                data-aos-delay="100"
+              <label
+                for="yogaYesRadio"
+                class="form-label me-4"
               >
-                <label
-                  for="yogaYesRadio"
-                  class="form-label me-4"
+                <input
+                  type="radio"
+                  name="practiseYogaRadio"
+                  value="接觸過瑜珈"
+                  id="yogaYesRadio"
+                  class="form-check-input"
+                  checked
                 >
-                  <input
-                    type="radio"
-                    name="practiseYogaRadio"
-                    value="接觸過瑜珈"
-                    id="yogaYesRadio"
-                    class="form-check-input"
-                    checked
-                  >
-                  是
-                </label>
+                是
+              </label>
 
-                <label
-                  for="yogaNoRadio"
-                  class="form-label"
+              <label
+                for="yogaNoRadio"
+                class="form-label"
+              >
+                <input
+                  type="radio"
+                  name="practiseYogaRadio"
+                  value="沒接觸過瑜珈"
+                  id="yogaNoRadio"
+                  class="form-check-input"
                 >
-                  <input
-                    type="radio"
-                    name="practiseYogaRadio"
-                    value="沒接觸過瑜珈"
-                    id="yogaNoRadio"
-                    class="form-check-input"
-                  >
-                  否
-                </label>
-              </div>
+                否
+              </label>
             </li>
 
-            <li
-              class="mb-4"
-            >
-              <p
-                class="mb-2"
-                data-aos="fade-up"
-                data-aos-duration="900"
-                data-aos-easing="ease"
-              >
-                2. 想改善的生活問題?
-              </p>
+            <li class="mb-4">
+              <p class="mb-2">2. 想改善的生活問題?</p>
 
-              <ul
-                data-aos="fade-up"
-                data-aos-duration="900"
-                data-aos-easing="ease"
-                data-aos-delay="100"
-              >
+              <ul>
                 <li class="mb-2">
                   <label
                     for="muscleEndurance"
@@ -232,21 +209,9 @@ current: reserve_step2_fillOrder
             </li>
 
             <li class="mb-4">
-              <p
-                class="mb-2"
-                data-aos="fade-up"
-                data-aos-duration="900"
-                data-aos-easing="ease"
-              >
-                3. 每週累積運動量約為多少？
-              </p>
+              <p class="mb-2">3. 每週累積運動量約為多少？</p>
 
-              <ul
-                data-aos="fade-up"
-                data-aos-duration="900"
-                data-aos-easing="ease"
-                data-aos-delay="100"
-              >
+              <ul>
                 <li>
                   <label
                     for="sportsTime_1"
@@ -314,9 +279,6 @@ current: reserve_step2_fillOrder
               <label
                 for="reserveDate"
                 class="mb-1"
-                data-aos="fade-up"
-                data-aos-duration="900"
-                data-aos-easing="ease"
               >
                 4. 上課預約報到日
                 <small class="mt-0.5 d-block">
@@ -329,29 +291,15 @@ current: reserve_step2_fillOrder
                 placeholder="MM/DD/YYYY"
                 id="reserveDate"
                 class="form-control js-datepicker-date w-auto text-primary"
-                data-aos="fade-up"
-                data-aos-duration="900"
-                data-aos-easing="ease"
-                data-aos-delay="100"
               >
             </li>
 
             <li>
-              <p
-                class="mb-2"
-                data-aos="fade-up"
-                data-aos-duration="900"
-                data-aos-easing="ease"
-              >
+              <p class="mb-2">
                 5. 填寫基本資料，完成預約後會寄送通知至電子信箱
               </p>
 
-              <ul
-                class="text-primary"
-                data-aos="fade-up"
-                data-aos-duration="900"
-                data-aos-easing="ease"
-              >
+              <ul class="text-primary">
                 <li class="mb-2">
                   <div class="row">
                     <div class="col-6">
@@ -364,7 +312,6 @@ current: reserve_step2_fillOrder
                       <input
                         type="text"
                         placeholder="請輸入您的姓名"
-                        value="Joanne Chen"
                         id="reserveName"
                         class="form-control text-primary"
                       >
@@ -380,7 +327,6 @@ current: reserve_step2_fillOrder
                       <input
                         type="text"
                         placeholder="請輸入您的年齡"
-                        value="18"
                         id="reserveAge"
                         class="form-control text-primary"
                       >
@@ -414,7 +360,6 @@ current: reserve_step2_fillOrder
                   <input
                     type="email"
                     placeholder="請輸入Email"
-                    value="example123@gmail.com"
                     id="reserveEmail"
                     class="form-control text-primary"
                   >
@@ -430,7 +375,6 @@ current: reserve_step2_fillOrder
                   <input
                     type="tel"
                     placeholder="請輸入手機號碼"
-                    value="0912-345-678"
                     id="reservePhone"
                     class="form-control text-primary"
                   >
