@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>初次體驗課程-選擇瑜珈課程-DOYOGA</title>
+    <title>選擇瑜珈課程-DOYOGA</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
@@ -61,6 +61,7 @@
       data-aos="fade-down"
       data-aos-duration="800"
       data-aos-delay="200"
+      data-aos-offset="0"
     >
       <div
   class="container"
@@ -134,7 +135,7 @@
     <ul class="d-flex justify-content-center py-1 p-lg-0">
       <li class="me-2">
         <a
-          href="./reserve_step1-1_selectCourse.html"
+          href="./reserve_step1_selectCourse.html"
           class="btn btn-outline-primary btn-lg py-1 px-2 fw-normal"
         >
           立即預約
@@ -155,7 +156,7 @@
 
     
 <main class="pt-6 pt-md-8 pb-11 pb-md-10 pb-lg-13">
-  <section class="container pb-9">
+  <section class="container pb-7 pb-lg-9">
     <div class="overflow-hidden mb-3 mb-md-2">
       <h2
         class="fs-3 text-primary text-center"
@@ -207,15 +208,20 @@
 
     <ul class="row align-items-center">
       <li
-        class="col-lg-4 arrow"
+        class="js-experience-cards col-lg-4"
         data-aos="fade-up"
         data-aos-duration="700"
         data-aos-easing="ease-out"
         data-aos-delay="300"
+        data-name="首次體驗"
       >
-        <div class="card d-none d-md-block d-lg-none
+        <div class="card js-experience-card mb-2 mb-lg-0
+          d-none d-md-block d-lg-none
           overflow-hidden
-          border border-primary-light border-4
+          border border-primary-light
+          hover-scale-1
+          hover-shadow
+          transition-duration-0.2
           cursor-pointer"
         >
           <div class="row g-0">
@@ -251,9 +257,13 @@
           </div>
         </div>
 
-        <div class="card d-md-none d-lg-block
+        <div class="card js-experience-card
+          d-md-none d-lg-block
           overflow-hidden
-          border border-primary-light border-4
+          border border-primary-light
+          hover-scale-1
+          hover-shadow
+          transition-duration-0.2
           cursor-pointer"
         >
           <div class="position-relative overflow-hidden ratio ratio-7x5">
@@ -286,13 +296,15 @@
       </li>
 
       <li
-        class="col-lg-4 d-none d-lg-block"
+        class="js-experience-cards col-lg-4"
         data-aos="fade-up"
         data-aos-duration="700"
         data-aos-easing="ease-out"
         data-aos-delay="400"
+        data-name="短期體驗"
       >
-        <div class="card d-none d-md-block d-lg-none
+        <div class="card js-experience-card mb-2 mb-lg-0
+          d-none d-md-block d-lg-none
           overflow-hidden
           border border-primary-light
           hover-scale-1
@@ -333,7 +345,8 @@
           </div>
         </div>
 
-        <div class="card d-md-none d-lg-block
+        <div class="card js-experience-card
+          d-md-none d-lg-block
           overflow-hidden
           border border-primary-light
           hover-scale-1
@@ -371,13 +384,15 @@
       </li>
 
       <li
-        class="col-lg-4 d-none d-lg-block"
+        class="js-experience-cards col-lg-4"
         data-aos="fade-up"
         data-aos-duration="700"
         data-aos-easing="ease-out"
         data-aos-delay="500"
+        data-name="長期體驗"
       >
-        <div class="card d-none d-md-block d-lg-none
+        <div class="card js-experience-card
+          d-none d-md-block d-lg-none
           overflow-hidden
           border border-primary-light
           hover-scale-1
@@ -418,7 +433,8 @@
           </div>
         </div>
 
-        <div class="card d-md-none d-lg-block
+        <div class="card js-experience-card
+          d-md-none d-lg-block
           overflow-hidden
           border border-primary-light
           hover-scale-1
@@ -458,11 +474,11 @@
   </section>
 
   <section
-    class="bg-primary pt-4 pt-lg-5 pb-6 pb-lg-8"
+    class="js-scheme-show bg-primary mb-4 mb-lg-5"
     data-aos="fade-up"
     data-aos-duration="1000"
   >
-    <div class="container">
+    <div class="container pt-4 pt-lg-5 pb-6 pb-lg-8">
 
       <div class="overflow-hidden  mb-3 mb-lg-4">
         <h2
@@ -486,6 +502,7 @@
                 bg-primary-light
                 p-3
                 shadow
+                hover-border
                 cursor-pointer"
               data-name="基礎"
               data-aos="zoom-in"
@@ -525,9 +542,10 @@
             <div
               class="card js-scheme-card
                 border border-4 border-transparent
-                bg-primary-light
+                bg-primary-light 
                 p-3
                 shadow
+                hover-border
                 cursor-pointer"
               data-name="中階"
               data-aos="zoom-in"
@@ -570,6 +588,7 @@
                 bg-primary-light
                 p-3
                 shadow
+                hover-border
                 cursor-pointer"
               data-name="高階"
               data-aos="zoom-in"
@@ -610,22 +629,26 @@
     </div>
   </section>
 
-  <section class="container text-primary pt-4 pt-lg-5">
+  <section class="container text-primary">
     <div class="row align-items-center flex-column">
       <div class="col-md-8 col-lg-6 mb-4 text-center">
 
-        <div class="overflow-hidden mb-5">
-          <h4
-            class="fs-5 d-inline-block border-bottom border-2 border-primary"
+        <div class="js-scheme-name-show overflow-hidden mb-5">
+          <div
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-easing="ease"
           >
-            <span class="fs-7 d-block mb-0.5">
+            <p class="fs-7 d-block mb-0.5">
               你選擇的是
-            </span>
-            首次體驗課程-<span class="js-course-class">基礎</span>
-          </h4>
+            </p>
+            <h4 class="js-choose-class-name fs-5
+              d-inline-block
+              border-bottom border-2 border-primary"
+            >
+              <span class="js-course-name">首次體驗</span>課程-<span class="js-course-scheme">基礎</span>
+            </h4>
+          </div>
         </div>
 
 
@@ -682,7 +705,7 @@
 
 
       <div
-        class="col-md-4 text-center"
+        class="js-next-step col-md-4 text-center"
         data-aos="zoom-in"
         data-aos-duration="500"
         data-aos-easing="ease-out"
@@ -809,6 +832,7 @@
               data-aos="fade-right"
               data-aos-duration="500"
               data-aos-easing="ease-in"
+              data-aos-offset="0"
             >
               <a
                 href="./courseDescription.html"
@@ -898,16 +922,16 @@
               <img
                 src="./assets/images/course/course-11.jpg"
                 alt="課程圖片"
-                class="rounded-pill"
+                class="rounded-pill js-model-img"
               >
             </div>
           </div>
           <div class="col-md-7 col-lg-6 pt-2 pt-md-0">
-            <h3 class="fs-3">
+            <h3 class="js-model-title fs-3">
               基礎 Basic
             </h3>
             <p class="mb-2">
-              授課老師：Carol Tang
+              授課老師：<span class="js-model-teacher">Carol Tang</span>
               <span class="badge rounded-pill
                 fs-8 lh-base fw-lighter text-light
                 bg-primary
@@ -922,7 +946,7 @@
             </p>
 
             <a
-              href="./reserve_step1-1_selectCourse.html"
+              href="./reserve_step1_selectCourse.html"
               class="btn btn-secondary"
             >
               立即預約

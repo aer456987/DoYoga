@@ -9260,10 +9260,6 @@ fieldset:disabled .btn {
   height: 418px !important;
 }
 
-.h-x4\.65 {
-  height: 465px !important;
-}
-
 .h-x6\.28 {
   height: 628px !important;
 }
@@ -11856,6 +11852,22 @@ fieldset:disabled .btn {
           transition-duration: 0.2s !important;
 }
 
+.text-shadow {
+  text-shadow: 0 0 5px #000000 !important;
+}
+
+.text-shadow-sm {
+  text-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.text-shadow-lg {
+  text-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+.text-shadow-none {
+  text-shadow: none !important;
+}
+
 .z-index-1 {
   z-index: 1 !important;
 }
@@ -11991,9 +12003,6 @@ fieldset:disabled .btn {
   }
   .h-sm-x4\.18 {
     height: 418px !important;
-  }
-  .h-sm-x4\.65 {
-    height: 465px !important;
   }
   .h-sm-x6\.28 {
     height: 628px !important;
@@ -13851,9 +13860,6 @@ fieldset:disabled .btn {
   .h-md-x4\.18 {
     height: 418px !important;
   }
-  .h-md-x4\.65 {
-    height: 465px !important;
-  }
   .h-md-x6\.28 {
     height: 628px !important;
   }
@@ -15709,9 +15715,6 @@ fieldset:disabled .btn {
   }
   .h-lg-x4\.18 {
     height: 418px !important;
-  }
-  .h-lg-x4\.65 {
-    height: 465px !important;
   }
   .h-lg-x6\.28 {
     height: 628px !important;
@@ -17569,9 +17572,6 @@ fieldset:disabled .btn {
   .h-xl-x4\.18 {
     height: 418px !important;
   }
-  .h-xl-x4\.65 {
-    height: 465px !important;
-  }
   .h-xl-x6\.28 {
     height: 628px !important;
   }
@@ -19427,9 +19427,6 @@ fieldset:disabled .btn {
   }
   .h-xxl-x4\.18 {
     height: 418px !important;
-  }
-  .h-xxl-x4\.65 {
-    height: 465px !important;
   }
   .h-xxl-x6\.28 {
     height: 628px !important;
@@ -26664,15 +26661,19 @@ i {
   vertical-align: middle;
 }
 
+.hover-border:hover {
+  border-color: #FFFFFF !important;
+}
+
+.hover-shadow:hover {
+  -webkit-box-shadow: 0 0 10px rgba(192, 164, 165, 0.5);
+          box-shadow: 0 0 10px rgba(192, 164, 165, 0.5);
+}
+
 .hover-scale-1:hover {
   -webkit-transform: scale(1.02);
       -ms-transform: scale(1.02);
           transform: scale(1.02);
-}
-
-.hover-shadow:hover {
-  -webkit-box-shadow: 0 0 5px rgba(112, 112, 112, 0.5);
-          box-shadow: 0 0 5px rgba(112, 112, 112, 0.5);
 }
 
 .arrow {
