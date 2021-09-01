@@ -24,18 +24,28 @@
   d-none d-lg-block
   z-index-3"
 >
-  <li class="mb-1.75">
+  <li class="mb-7">
     <a
       href="#"
-      class="d-block bg-light rounded-circle border border-2 border-light"
+      class="js-link-icon js-tooltip-icons
+        hover-animation-swing transition-duration-1
+        d-block"
+      data-bs-toggle="tooltip"
+      data-bs-placement="left"
+      title="Facebook 粉絲團"
     >
       <img src="./assets/images/icons/icon-fb.svg" alt="fb icon" class="user-select-none">
     </a>
   </li>
-  <li class="mb-1.75">
+  <li class="mb-7">
     <a
       href="#"
-      class="d-block bg-light rounded-circle"
+      class="js-link-icon js-tooltip-icons
+        hover-animation-swing transition-duration-1
+        d-block"
+      data-bs-toggle="tooltip"
+      data-bs-placement="left"
+      title="Instagram"
     >
       <img src="./assets/images/icons/icon-ig.svg" alt="ig icon">
     </a>
@@ -43,7 +53,12 @@
   <li>
     <a
       href="#"
-      class="d-block bg-light rounded-pill"
+      class="js-link-icon js-tooltip-icons
+        hover-animation-swing transition-duration-1
+        d-block"
+      data-bs-toggle="tooltip"
+      data-bs-placement="left"
+      title="@ Line 社群"
     >
       <img src="./assets/images/icons/icon-line.svg" alt="line icon">
     </a>
@@ -54,7 +69,7 @@
     <nav class="navbar navbar-expand-lg
       navbar-light bg-secondary
       w-100
-      py-2.5
+      py-10
       z-index-999
       shadow-sm
       position-fixed"
@@ -132,11 +147,12 @@
       </li>
     </ul>
 
-    <ul class="d-flex justify-content-center py-1 p-lg-0">
-      <li class="me-2">
+    <ul class="d-flex justify-content-center py-4 p-lg-0">
+      <li class="me-8">
         <a
           href="./reserve_step1_selectCourse.html"
-          class="btn btn-outline-primary btn-lg py-1 px-2 fw-normal"
+          class="btn btn-outline-primary btn-lg py-4 px-8 fw-normal
+          animate__animated animate__tada transition-duration-1"
         >
           立即預約
         </a>
@@ -144,7 +160,7 @@
       <li>
         <a
           href="./contactUs.html"
-          class="btn btn-outline-primary btn-lg py-1 px-2 fw-normal"
+          class="btn btn-outline-primary btn-lg py-4 px-8 fw-normal"
         >
           聯絡我們
         </a>
@@ -168,12 +184,12 @@
   <section class="container">
     <div class="overflow-hidden">
       <h2
-        class="mb-0.25 mb-md-0"
+        class="mb-1 mb-md-0"
         data-aos="fade-up"
         data-aos-duration="1300"
       >
         <span class="d-block h5 fw-light
-            mb-1.25 mb-md-0"
+            mb-5 mb-md-0"
         >
           健身輕時尚
         </span>
@@ -182,7 +198,7 @@
     </div>
     <div class="overflow-hidden">
       <p
-        class="fs-4 fw-light mb-2"
+        class="fs-4 fw-light mb-8"
         data-aos="fade-up"
         data-aos-duration="800"
         data-aos-delay="200"
@@ -192,28 +208,35 @@
     </div>
     <div class="d-flex">
       <div class="overflow-hidden">
-        <a
-          href="./reserve_step1_selectCourse.html"
-          class="btn btn-secondary btn-secondary-dark me-1 hvr-ripple-out"
+        <div
           data-aos="fade-right"
           data-aos-duration="1000"
           data-aos-delay="600"
           data-aos-easing="ease"
         >
-          立即預約
-        </a>
+          <a
+            href="./reserve_step1_selectCourse.html"
+            class="btn btn-secondary btn-secondary-dark me-4 transition-duration-1"
+            
+          >
+            立即預約
+          </a>
+        </div>
       </div>
       <div class="overflow-hidden">
-        <a
-          href="./courseDescription.html"
-          class="btn btn-primary-light"
+        <div
           data-aos="fade-right"
           data-aos-duration="1100"
           data-aos-delay="1000"
           data-aos-easing="ease"
         >
-          課程介紹
-        </a>
+          <a
+            href="./courseDescription.html"
+            class="btn btn-primary-light transition-duration-1"
+          >
+            課程介紹
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -221,11 +244,11 @@
 
 
 <main>
-  <section class="pt-4 pt-lg-5 pb-6 pb-lg-8">
+  <section class="pt-16 pt-lg-20 pb-84 pb-lg-32">
     <div class="container">
       <div class="overflow-hidden">
         <h3
-          class="fs-3 text-primary text-center mb-0.5"
+          class="fs-3 text-primary text-center mb-2"
           data-aos="fade-up"
           data-aos-duration="700"
           data-aos-easing="ease"
@@ -233,7 +256,7 @@
           感受身心，活在當下
         </h3>
       </div>
-      <div class="overflow-hidden mb-3 mb-lg-4">
+      <div class="overflow-hidden mb-12 mb-lg-16">
         <p
           class="fs-5 text-primary-light text-center"
           data-aos="fade-up"
@@ -247,7 +270,7 @@
 
       <ul class="row">
         <li
-          class="col-md-4 mb-2 mb-md-0"
+          class="col-md-4 mb-8 mb-md-0"
           data-aos="fade-up-right"
           data-aos-duration="1000"
           data-aos-easing="ease"
@@ -266,10 +289,10 @@
               position-relative
               ratio ratio-5x6"
             >
-            <div class="p-3 p-md-2 p-lg-3
+            <div class="p-12 p-md-8 p-lg-12
               d-flex flex-column justify-content-end"
             >
-                <h4 class="fw-light mb-0.5">
+                <h4 class="fw-light mb-2">
                   整體健身
                 </h4>
                 <p>
@@ -281,7 +304,7 @@
         </li>
 
         <li
-          class="col-md-4 mb-2 mb-md-0"
+          class="col-md-4 mb-8 mb-md-0"
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-easing="ease"
@@ -300,10 +323,10 @@
               position-relative
               ratio ratio-5x6"
             >
-              <div class="p-3 p-md-2 p-lg-3
+              <div class="p-12 p-md-8 p-lg-12
                 d-flex flex-column justify-content-end"
               >
-                <h4 class="fw-light mb-0.5">
+                <h4 class="fw-light mb-2">
                   減壓放鬆
                 </h4>
                 <p>
@@ -334,10 +357,10 @@
               position-relative
               ratio ratio-5x6"
             >
-              <div class="p-3 p-md-2 p-lg-3
+              <div class="p-12 p-md-8 p-lg-12
                 d-flex flex-column justify-content-end"
               >
-                <h4 class="fw-light mb-0.5">
+                <h4 class="fw-light mb-2">
                   局部雕塑
                 </h4>
                 <p>
@@ -354,7 +377,7 @@
 
 
   <section
-    class="bg-secondary pt-4 pb-6 py-lg-8"
+    class="bg-secondary pt-16 pb-6 py-lg-32"
     data-aos="fade-up"
     data-aos-duration="1000"
   >
@@ -377,7 +400,7 @@
 
         <div class="col-lg-6">
           <h3
-            class="fs-3 text-primary text-center mb-0.5"
+            class="fs-3 text-primary text-center mb-2"
             data-aos="fade-left"
             data-aos-duration="1300"
             data-aos-easing="ease-out-back"
@@ -386,7 +409,7 @@
             頂尖師資、專業教學
           </h3>
           <p
-            class="fs-5 text-primary-light mb-3"
+            class="fs-5 text-primary-light mb-12"
             data-aos="fade-left"
             data-aos-duration="1300"
             data-aos-easing="ease-out-back"
@@ -397,12 +420,12 @@
 
           <ul class="row justify-content-md-end text-dark">
             <li
-              class="col-md-11 col-lg-12 mb-2"
+              class="col-md-11 col-lg-12 mb-8"
               data-aos="zoom-in-left"
               data-aos-duration="1300"
               data-aos-easing="ease-in-out-back"
             >
-              <div class="card p-2 py-md-5 px-md-6 ms-lg-n2">
+              <div class="card p-8 py-md-20 px-md-24 ms-lg-n2">
                 <div class="d-flex align-items-center">
                   <div class="ratio ratio-1x1 w-x0.96">
                     <img
@@ -410,11 +433,11 @@
                       alt="使用者照片"
                     >
                   </div>
-                  <ul class="ms-2 ms-md-3 ms-lg-2.5">
-                    <li class="mb-0.5">
+                  <ul class="ms-8 ms-md-12 ms-lg-10">
+                    <li class="mb-2">
                       <p class="fs-5">Carol Tang 老師</p>
                     </li>
-                    <li class="mb-0.5">
+                    <li class="mb-2">
                       <p>教學經歷 10 年</p>
                     </li>
                     <li>
@@ -426,13 +449,13 @@
             </li>
 
             <li
-              class="col-md-10 col-lg-12 mb-2"
+              class="col-md-10 col-lg-12 mb-8"
               data-aos="zoom-in-left"
               data-aos-duration="1200"
               data-aos-easing="ease-in-out-back"
               data-aos-delay="100"
             >
-              <div class="card p-2 py-md-3 px-md-4">
+              <div class="card p-8 py-md-12 px-md-16">
                 <div class="d-flex align-items-center">
                   <div class="ratio ratio-1x1 w-x0.68">
                     <img
@@ -440,11 +463,11 @@
                       alt="使用者照片"
                     >
                   </div>
-                  <ul class="ms-2 ms-md-3 ms-lg-2.5">
-                    <li class="mb-0.5">
+                  <ul class="ms-8 ms-md-12 ms-lg-10">
+                    <li class="mb-2">
                       <p class="fs-5">Kanae 老師</p>
                     </li>
-                    <li class="mb-0.5">
+                    <li class="mb-2">
                       <p>教學經歷 10 年</p>
                     </li>
                   </ul>
@@ -459,7 +482,7 @@
               data-aos-easing="ease-in-out-back"
               data-aos-delay="150"
             >
-              <div class="card p-2 py-md-3 px-md-4">
+              <div class="card p-8 py-md-12 px-md-16">
                 <div class="d-flex align-items-center">
                   <div class="ratio ratio-1x1 w-x0.68">
                     <img
@@ -467,11 +490,11 @@
                       alt="使用者照片"
                     >
                   </div>
-                  <ul class="ms-2 ms-md-3 ms-lg-2.5">
-                    <li class="mb-0.5">
+                  <ul class="ms-8 ms-md-12 ms-lg-10">
+                    <li class="mb-2">
                       <p class="fs-5">Asa Ifrit 老師</p>
                     </li>
-                    <li class="mb-0.5">
+                    <li class="mb-2">
                       <p>教學經歷 10 年</p>
                     </li>
                   </ul>
@@ -485,13 +508,13 @@
   </section>
 
 
-  <section class="py-6 py-md-7 py-lg-8">
+  <section class="py-24 py-md-28 py-lg-32">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-md-6 order-md-last mb-2 mb-md-0">
+        <div class="col-md-6 order-md-last mb-8 mb-md-0">
           <div class="overflow-hidden">
             <h3
-              class="fs-3 text-primary mb-0.5"
+              class="fs-3 text-primary mb-2"
               data-aos="fade-left"
               data-aos-duration="800"
               data-aos-easing="ease-in-out"
@@ -499,7 +522,7 @@
               舒適空間、靜心放鬆
             </h3>
             <p
-              class="fs-5 text-primary-light mb-2 mb-lg-3"
+              class="fs-5 text-primary-light mb-8 mb-lg-12"
               data-aos="fade-left"
               data-aos-duration="800"
               data-aos-easing="ease-in-out"
@@ -514,8 +537,14 @@
               data-aos-easing="ease-in"
               data-aos-delay="50"
             >
-              <a href="./classRoom.html">
-                環境介紹 →
+              <a
+                href="./classRoom.html"
+                class="js-link-animate hvr-icon-wobble-horizontal hvr-underline-from-center pb-1"
+              >
+                環境介紹
+                <i class="material-icons material-icons-round hvr-icon ms-1">
+                  arrow_forward
+                </i>
               </a>
             </div>
           </div>
@@ -550,7 +579,7 @@
             >
               <div class="row">
                 <div class="col-12
-                  mb-0 mb-md-4 mb-lg-3.75"
+                  mb-0 mb-md-16 mb-lg-15"
                 >
                   <div class="ratio ratio-11x14 ratio-md-3x4 ratio-lg-16x21
                     position-relative rounded-pill
@@ -566,7 +595,7 @@
 
                 <div
                   class="col-12
-                    mb-0 mb-md-4 mb-lg-3.75
+                    mb-0 mb-md-16 mb-lg-15
                     d-none d-md-block"
                   data-aos="zoom-in"
                   data-aos-duration="500"
@@ -595,19 +624,19 @@
 
 
   <section
-    class="bg-secondary py-6 py-md-7 py-lg-8"
+    class="bg-secondary py-24 py-md-28 py-lg-32"
     data-aos="fade-up"
     data-aos-duration="1000"
   >
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-6 col-lg-5
-          mb-2 mb-md-0
+          mb-8 mb-md-0
           offset-lg-1"
         >
           <div class="overflow-hidden">
             <h3
-              class="fs-3 text-primary mb-0.5"
+              class="fs-3 text-primary mb-2"
               data-aos="fade-left"
               data-aos-duration="800"
               data-aos-easing="ease-in-out"
@@ -615,7 +644,7 @@
               精心設計、課程多元
             </h3>
             <p
-              class="fs-5 text-primary-light mb-2 mb-lg-3"
+              class="fs-5 text-primary-light mb-8 mb-lg-12"
               data-aos="fade-left"
               data-aos-duration="800"
               data-aos-easing="ease-in-out"
@@ -629,8 +658,14 @@
               data-aos-easing="ease-in"
               data-aos-delay="50"
             >
-              <a href="./courseDescription.html">
-                課程介紹 →
+              <a
+                href="./courseDescription.html"
+                class="js-link-animate hvr-icon-wobble-horizontal hvr-underline-from-center pb-1"
+              >
+                課程介紹
+                <i class="material-icons material-icons-round hvr-icon ms-1">
+                  arrow_forward
+                </i>
               </a>
             </div>
           </div>
@@ -640,7 +675,7 @@
           <div class="d-none d-lg-block overflow-auto scrollbar-w">
             <ul class="d-flex me-n1.85">
               <li
-                class="ratio ratio-1x1 me-3.75
+                class="ratio ratio-1x1 me-15
                   position-relative rounded-pill
                   overflow-hidden"
                 data-aos="fade-left"
@@ -655,7 +690,7 @@
               </li>
 
               <li
-                class="ratio ratio-1x1 me-3.75
+                class="ratio ratio-1x1 me-15
                   position-relative rounded-pill
                   overflow-hidden"
                 data-aos="fade-left"
@@ -671,7 +706,7 @@
               </li>
 
               <li
-                class="ratio ratio-1x1 me-3.75
+                class="ratio ratio-1x1 me-15
                   position-relative rounded-pill
                   overflow-hidden"
                 data-aos="fade-left"
@@ -707,7 +742,7 @@
           <ul class="row d-lg-none">
             <li
               class="col-6 col-lg-12
-                mb-2 mb-md-3"
+                mb-8 mb-md-12"
               data-aos="fade-left"
               data-aos-duration="500"
               data-aos-easing="ease-out"
@@ -727,7 +762,7 @@
 
             <li
               class="col-6 col-lg-12
-                mb-2 mb-md-3"
+                mb-8 mb-md-12"
               data-aos="fade-left"
               data-aos-duration="500"
               data-aos-easing="ease-out"
@@ -791,11 +826,11 @@
   </section>
 
 
-  <section class="pt-4 pt-md-5 pb-6 pb-md-7 pb-lg-8">
+  <section class="pt-16 pt-md-20 pb-84 pb-md-28 pb-lg-32">
     <div class="container">
       <div class="overflow-hidden">
         <h3
-          class="fs-3 text-primary text-center mb-0.5"
+          class="fs-3 text-primary text-center mb-2"
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-easing="ease"
@@ -803,7 +838,7 @@
           方案選擇
         </h3>
       </div>
-      <div class="overflow-hidden mb-3 mb-lg-4">
+      <div class="overflow-hidden mb-12 mb-lg-16">
         <p
           class="fs-5 text-primary-light text-center"
           data-aos="fade-up"
@@ -817,7 +852,7 @@
 
       <ul class="row">
         <li
-          class="col-lg-4 mb-2 mb-md-3 mb-lg-0"
+          class="col-lg-4 mb-8 mb-md-12 mb-lg-0"
           data-aos="fade-up"
           data-aos-duration="800"
           data-aos-easing="ease-out"
@@ -827,9 +862,9 @@
             <div class="card d-none d-md-block d-lg-none
               overflow-hidden
               border border-primary-light
-              hover-scale-1
+              hover-rotate-1
               hover-shadow
-              transition-duration-0.2"
+              transition-duration-1"
             >
               <div class="row g-0">
                 <div class="col-md-6">
@@ -842,20 +877,20 @@
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <div class="card-body text-primary p-3">
+                  <div class="card-body text-primary p-12">
                     <h4 class="card-title fs-5">
                       首次體驗
-                      <span class="d-block text-primary-light pt-0.5">
+                      <span class="d-block text-primary-light pt-2">
                         NT $450 / 次
                       </span>
                     </h4>
-                    <p class="text-start mb-3">
+                    <p class="text-start mb-12">
                       分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。
                     </p>
 
                     <button
                       type="button"
-                      class="btn btn-primary-light py-1 w-100"
+                      class="btn btn-primary-light py-4 w-100"
                     >
                       選擇課程
                     </button>
@@ -867,9 +902,9 @@
             <div class="card d-md-none d-lg-block
               overflow-hidden
               border border-primary-light
-              hover-scale-1
+              hover-rotate-1
               hover-shadow
-              transition-duration-0.2"
+              transition-duration-1"
             >
               <div class="position-relative overflow-hidden ratio ratio-7x5">
                 <img
@@ -879,20 +914,20 @@
                 >
               </div>
 
-              <div class="card-body text-primary text-center p-3">
+              <div class="card-body text-primary text-center p-12">
                 <h4 class="card-title fs-5">
                   首次體驗
-                  <span class="d-block text-primary-light pt-0.5">
+                  <span class="d-block text-primary-light pt-2">
                     NT $450 / 次
                   </span>
                 </h4>
-                <p class="text-start mb-5 mb-md-3 mb-lg-5">
+                <p class="text-start mb-80 mb-md-12 mb-lg-20">
                   分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。
                 </p>
 
                 <button
                   type="button"
-                  class="btn btn-primary-light py-1 w-100"
+                  class="btn btn-primary-light py-4 w-100"
                 >
                   選擇課程
                 </button>
@@ -902,7 +937,7 @@
         </li>
 
         <li
-          class="col-lg-4 mb-2 mb-md-3 mb-lg-0"
+          class="col-lg-4 mb-8 mb-md-12 mb-lg-0"
           data-aos="fade-up"
           data-aos-duration="800"
           data-aos-easing="ease-out"
@@ -912,9 +947,9 @@
             <div class="card d-none d-md-block d-lg-none
               overflow-hidden
               border border-primary-light
-              hover-scale-1
+              hover-rotate-1
               hover-shadow
-              transition-duration-0.2"
+              transition-duration-1"
             >
               <div class="row g-0">
                 <div class="col-md-6">
@@ -927,20 +962,20 @@
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <div class="card-body text-primary p-3">
+                  <div class="card-body text-primary p-12">
                     <h4 class="card-title fs-5">
                       短期體驗
-                      <span class="d-block text-primary-light pt-0.5">
+                      <span class="d-block text-primary-light pt-2">
                         NT $1800 / 月
                       </span>
                     </h4>
-                    <p class="text-start mb-3">
+                    <p class="text-start mb-12">
                       分基礎、中級、高級可以選擇。想試著培養瑜珈習慣者可以選擇此方案。
                     </p>
 
                     <button
                       type="button"
-                      class="btn btn-primary-light py-1 w-100"
+                      class="btn btn-primary-light py-4 w-100"
                     >
                       選擇課程
                     </button>
@@ -952,9 +987,9 @@
             <div class="card d-md-none d-lg-block
               overflow-hidden
               border border-primary-light
-              hover-scale-1
+              hover-rotate-1
               hover-shadow
-              transition-duration-0.2"
+              transition-duration-1"
             >
               <div class="position-relative overflow-hidden ratio ratio-7x5">
                 <img
@@ -964,20 +999,20 @@
                 >
               </div>
 
-              <div class="card-body text-primary text-center p-3">
+              <div class="card-body text-primary text-center p-12">
                 <h4 class="card-title fs-5">
                   短期體驗
-                  <span class="d-block text-primary-light pt-0.5">
+                  <span class="d-block text-primary-light pt-2">
                     NT $1800 / 月
                   </span>
                 </h4>
-                <p class="text-start mb-5 mb-md-3 mb-lg-5">
+                <p class="text-start mb-80 mb-md-12 mb-lg-20">
                   分基礎、中級、高級可以選擇。想試著培養瑜珈習慣者可以選擇此方案。
                 </p>
 
                 <button
                   type="button"
-                  class="btn btn-primary-light py-1 w-100"
+                  class="btn btn-primary-light py-4 w-100"
                 >
                   選擇課程
                 </button>
@@ -997,9 +1032,9 @@
             <div class="card d-none d-md-block d-lg-none
               overflow-hidden
               border border-primary-light
-              hover-scale-1
+              hover-rotate-1
               hover-shadow
-              transition-duration-0.2"
+              transition-duration-1"
             >
               <div class="row g-0">
                 <div class="col-md-6">
@@ -1012,20 +1047,20 @@
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <div class="card-body text-primary p-3">
+                  <div class="card-body text-primary p-12">
                     <h4 class="card-title fs-5">
                       長期體驗
-                      <span class="d-block text-primary-light pt-0.5">
+                      <span class="d-block text-primary-light pt-2">
                         NT $5600 / 季
                       </span>
                     </h4>
-                    <p class="text-start mb-3">
+                    <p class="text-start mb-12">
                       分基礎、中級、高級可以選擇。有長期習慣做瑜伽者建議選擇此方案。
                     </p>
 
                     <button
                       type="button"
-                      class="btn btn-primary-light py-1 w-100"
+                      class="btn btn-primary-light py-4 w-100"
                     >
                       選擇課程
                     </button>
@@ -1037,9 +1072,9 @@
             <div class="card d-md-none d-lg-block
               overflow-hidden
               border border-primary-light
-              hover-scale-1
+              hover-rotate-1
               hover-shadow
-              transition-duration-0.2"
+              transition-duration-1"
             >
               <div class="position-relative overflow-hidden ratio ratio-7x5">
                 <img
@@ -1049,20 +1084,20 @@
                 >
               </div>
 
-              <div class="card-body text-primary text-center p-3">
+              <div class="card-body text-primary text-center p-12">
                 <h4 class="card-title fs-5">
                   長期體驗
-                  <span class="d-block text-primary-light pt-0.5">
+                  <span class="d-block text-primary-light pt-2">
                     NT $5600 / 季
                   </span>
                 </h4>
-                <p class="text-start mb-5 mb-md-3 mb-lg-5">
+                <p class="text-start mb-80 mb-md-12 mb-lg-20">
                   分基礎、中級、高級可以選擇。有長期習慣做瑜伽者建議選擇此方案。
                 </p>
 
                 <button
                   type="button"
-                  class="btn btn-primary-light py-1 w-100"
+                  class="btn btn-primary-light py-4 w-100"
                 >
                   選擇課程
                 </button>
@@ -1076,12 +1111,12 @@
 
 
   <section
-    class="bg-secondary pt-4 pt-md-5 pb-6 pb-md-6 "
+    class="bg-secondary pt-16 pt-md-20 pb-84 pb-md-24 "
     data-aos="fade-up"
     data-aos-duration="1000"
   >
     <div class="container">
-      <div class="overflow-hidden mb-3 mb-md-4">
+      <div class="overflow-hidden mb-12 mb-md-16">
         <h3
           class="fs-3 text-primary text-center"
           data-aos="fade-up"
@@ -1096,7 +1131,7 @@
         <div class="swiper js-swiper-user-recommend swiper-user-recommend">
           <ul class="swiper-wrapper">
             <li
-              class="swiper-slide card text-primary px-2 py-1.75 mb-1 mb-md-2 mt-md-0"
+              class="swiper-slide card text-primary px-8 py-7 mb-4 mb-md-8 mt-md-0"
               data-aos="flip-up"
               data-aos-duration="2500"
               data-aos-easing="ease-out-back"
@@ -1109,14 +1144,14 @@
                     alt="使用者照片"
                   >
                 </div>
-                <ul class="ms-2 ms-md-2.5">
-                  <li class="mb-1">
+                <ul class="ms-8 ms-md-10">
+                  <li class="mb-4">
                     <p>
                       Joanne
-                      <span class="fs-8 ms-1">Oct 17 2020</span>
+                      <span class="fs-8 ms-4">Oct 17 2020</span>
                     </p>
                   </li>
-                  <li class="mb-1 text-primary-light">
+                  <li class="mb-4 text-primary-light">
                     <i class="material-icons material-icons-outlined">
                       star
                     </i>
@@ -1141,7 +1176,7 @@
             </li>
 
             <li
-              class="swiper-slide card text-primary px-2 py-1.75 mb-1 mb-md-2 mt-md-0"
+              class="swiper-slide card text-primary px-8 py-7 mb-4 mb-md-8 mt-md-0"
               data-aos="flip-up"
               data-aos-duration="2500"
               data-aos-easing="ease-out-back"
@@ -1154,14 +1189,14 @@
                     alt="使用者照片"
                   >
                 </div>
-                <ul class="ms-2 ms-md-2.5">
-                  <li class="mb-1">
+                <ul class="ms-8 ms-md-10">
+                  <li class="mb-4">
                     <p>
                       穎旻
-                      <span class="fs-8 ms-1">Oct 17 2020</span>
+                      <span class="fs-8 ms-4">Oct 17 2020</span>
                     </p>
                   </li>
-                  <li class="mb-1 text-primary-light">
+                  <li class="mb-4 text-primary-light">
                     <i class="material-icons material-icons-outlined">
                       star
                     </i>
@@ -1186,7 +1221,7 @@
             </li>
 
             <li
-              class="swiper-slide card text-primary px-2 py-1.75 mb-1 mb-md-2 mt-md-0"
+              class="swiper-slide card text-primary px-8 py-7 mb-4 mb-md-8 mt-md-0"
               data-aos="flip-up"
               data-aos-duration="2500"
               data-aos-easing="ease-out-back"
@@ -1199,14 +1234,14 @@
                     alt="使用者照片"
                   >
                 </div>
-                <ul class="ms-2 ms-md-2.5">
-                  <li class="mb-1">
+                <ul class="ms-8 ms-md-10">
+                  <li class="mb-4">
                     <p>
                       子琪
-                      <span class="fs-8 ms-1">Oct 17 2020</span>
+                      <span class="fs-8 ms-4">Oct 17 2020</span>
                     </p>
                   </li>
-                  <li class="mb-1 text-primary-light">
+                  <li class="mb-4 text-primary-light">
                     <i class="material-icons material-icons-outlined">
                       star
                     </i>
@@ -1231,7 +1266,7 @@
             </li>
 
             <li
-              class="swiper-slide card text-primary px-2 py-1.75 mb-1 mb-md-2 mt-md-0"
+              class="swiper-slide card text-primary px-8 py-7 mb-4 mb-md-8 mt-md-0"
               data-aos="flip-up"
               data-aos-duration="2500"
               data-aos-easing="ease-out-back"
@@ -1244,14 +1279,14 @@
                     alt="使用者照片"
                   >
                 </div>
-                <ul class="ms-2 ms-md-2.5">
-                  <li class="mb-1">
+                <ul class="ms-8 ms-md-10">
+                  <li class="mb-4">
                     <p>
                       葉子
-                      <span class="fs-8 ms-1">Oct 17 2020</span>
+                      <span class="fs-8 ms-4">Oct 17 2020</span>
                     </p>
                   </li>
-                  <li class="mb-1 text-primary-light">
+                  <li class="mb-4 text-primary-light">
                     <i class="material-icons material-icons-outlined">
                       star
                     </i>
@@ -1276,7 +1311,7 @@
             </li>
 
             <li
-              class="swiper-slide card text-primary px-2 py-1.75 mb-1 mb-md-2 mt-md-0"
+              class="swiper-slide card text-primary px-8 py-7 mb-4 mb-md-8 mt-md-0"
               data-aos="flip-up"
               data-aos-duration="2500"
               data-aos-easing="ease-out-back"
@@ -1289,14 +1324,14 @@
                     alt="使用者照片"
                   >
                 </div>
-                <ul class="ms-2 ms-md-2.5">
-                  <li class="mb-1">
+                <ul class="ms-8 ms-md-10">
+                  <li class="mb-4">
                     <p>
                       Ray
-                      <span class="fs-8 ms-1">Oct 17 2020</span>
+                      <span class="fs-8 ms-4">Oct 17 2020</span>
                     </p>
                   </li>
-                  <li class="mb-1 text-primary-light">
+                  <li class="mb-4 text-primary-light">
                     <i class="material-icons material-icons-outlined">
                       star
                     </i>
@@ -1321,7 +1356,7 @@
             </li>
 
             <li
-              class="swiper-slide card text-primary px-2 py-1.75 mb-1 mb-md-2 mt-md-0"
+              class="swiper-slide card text-primary px-8 py-7 mb-4 mb-md-8 mt-md-0"
               data-aos="flip-up"
               data-aos-duration="2500"
               data-aos-easing="ease-out-back"
@@ -1334,14 +1369,14 @@
                     alt="使用者照片"
                   >
                 </div>
-                <ul class="ms-2 ms-md-2.5">
-                  <li class="mb-1">
+                <ul class="ms-8 ms-md-10">
+                  <li class="mb-4">
                     <p>
                       俊儀
-                      <span class="fs-8 ms-1">Oct 17 2020</span>
+                      <span class="fs-8 ms-4">Oct 17 2020</span>
                     </p>
                   </li>
-                  <li class="mb-1 text-primary-light">
+                  <li class="mb-4 text-primary-light">
                     <i class="material-icons material-icons-outlined">
                       star
                     </i>
@@ -1382,12 +1417,12 @@
 </main>
 
     <footer class="text-light bg-primary">
-  <div class="border-bottom border-light py-3 py-md-4">
+  <div class="border-bottom border-light py-12 py-md-16">
     <div class="container">
       <div class="row justify-content-between">
         <div class="col-lg-6">
           <h3
-          class="fw-light mb-1"
+          class="fw-light mb-4"
           data-aos="fade-right"
           data-aos-duration="500"
           data-aos-easing="ease-in"
@@ -1407,28 +1442,36 @@
               >
                 <input
                   type="email"
+                  name="Email"
                   id="subscriptionEmail"
-                  class="form-control text-primary"
+                  class="form-control js-subscription-email text-primary"
                   placeholder="輸入您的電子信箱"
                   aria-label="輸入您的電子信箱"
                   aria-describedby="訂閱信箱"
                 >
-                <label
-                  for="subscriptionEmail"
-                  class="btn btn-primary-light
+                <button
+                  type="button"
+                  class="js-subscription-btn
+                    btn btn-outline-primary-light
                     text-light fw-light
-                    py-1 px-2"
+                    py-4 px-8"
+                  disabled
                 >
                   訂閱
-                </label>
+                </button>
               </div>
             </div>
+            <p class="js-subscription-email-msg
+              validate-msg validate-msg-white
+              fs-8 text-light text-start
+              ms-12 pt-4"
+            ></p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="py-4">
+  <div class="py-16">
     <div class="container">
       <div class="d-flex justify-content-between">
         <h4
@@ -1459,7 +1502,11 @@
           <li>
             <a
               href="#"
-              class="d-block me-1"
+              class="js-tooltip-icons hover-translate-y-1 transition-duration-1
+                d-block me-4"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              title="Facebook 粉絲團"
             >
               <img src="./assets/images/icons/icon-fb-white.svg" alt="fb icon">
             </a>
@@ -1467,15 +1514,23 @@
           <li>
             <a
               href="#"
-              class="d-block me-1"
+              class="js-tooltip-icons hover-translate-y-1 transition-duration-1
+                d-block me-4"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              title="Instagram"
             >
-              <img src="./assets/images/icons/icon-ig-white.svg" alt="ig icon" class="text-light">
+              <img src="./assets/images/icons/icon-ig-white.svg" alt="ig icon" class="hover-translate-y-1 transition-duration-1 text-light">
             </a>
           </li>
           <li>
             <a
               href="#"
-              class="d-block"
+              class="js-tooltip-icons hover-translate-y-1 transition-duration-1
+                d-block"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              title="@ Line 社群"
             >
               <img src="./assets/images/icons/icon-line-white.svg" alt="line icon">
             </a>
@@ -1495,7 +1550,7 @@
             >
               <a
                 href="./courseDescription.html"
-                class="nav-link link-light fw-lighter py-0.5"
+                class="nav-link link-light fw-lighter py-2"
               >
                 課程介紹
               </a>
@@ -1509,7 +1564,7 @@
             >
               <a
                 href="./classRoom.html"
-                class="nav-link link-light fw-lighter py-0.5"
+                class="nav-link link-light fw-lighter py-2"
               >
                 瑜珈空間
               </a>
@@ -1523,7 +1578,7 @@
             >
               <a
                 href="./curriculum.html"
-                class="nav-link link-light fw-lighter pt-0.5 pb-1 pb-md-0"
+                class="nav-link link-light fw-lighter pt-2 pb-4 pb-md-0"
               >
                 當月課表
               </a>
@@ -1571,9 +1626,9 @@
   >
     <div class="modal-content">
       <div class="modal-body
-        py-4 py-md-9
-        ps-md-3 px-lg-7
-        pe-md-4"
+        py-16 py-md-36
+        ps-md-12 px-lg-28
+        pe-md-16"
       >
         <div class="row align-items-center">
           <div class="col-md-5 col-lg-6">
@@ -1585,22 +1640,22 @@
               >
             </div>
           </div>
-          <div class="col-md-7 col-lg-6 pt-2 pt-md-0">
+          <div class="col-md-7 col-lg-6 pt-8 pt-md-0">
             <h3 class="js-model-title fs-3">
               基礎 Basic
             </h3>
-            <p class="mb-2">
+            <p class="mb-8">
               授課老師：<span class="js-model-teacher">Carol Tang</span>
               <span class="badge rounded-pill
                 fs-8 lh-base fw-lighter text-light
                 bg-primary
-                ms-1.5 px-2 py-0.5"
+                ms-6 px-8 py-2"
               >
                 60 min
               </span>
             </p>
 
-            <p class="mb-2">
+            <p class="mb-8">
               使用掛布懸掛在半空，進行哈達瑜珈體位法練習，藉由地心引力的重力原理，鍛鍊核心肌群，舒緩脊椎壓力。 訓練身體協調性，深層放鬆身體。 課堂裡老師會視同學狀況安排教導倒立動作，對於不敢嘗試倒立的同學來說，藉由掛布的支持與保護，加上老師細心指導，讓同學能更快掌握。
             </p>
 

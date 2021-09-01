@@ -24,18 +24,28 @@
   d-none d-lg-block
   z-index-3"
 >
-  <li class="mb-1.75">
+  <li class="mb-7">
     <a
       href="#"
-      class="d-block bg-light rounded-circle border border-2 border-light"
+      class="js-link-icon js-tooltip-icons
+        hover-animation-swing transition-duration-1
+        d-block"
+      data-bs-toggle="tooltip"
+      data-bs-placement="left"
+      title="Facebook 粉絲團"
     >
       <img src="./assets/images/icons/icon-fb.svg" alt="fb icon" class="user-select-none">
     </a>
   </li>
-  <li class="mb-1.75">
+  <li class="mb-7">
     <a
       href="#"
-      class="d-block bg-light rounded-circle"
+      class="js-link-icon js-tooltip-icons
+        hover-animation-swing transition-duration-1
+        d-block"
+      data-bs-toggle="tooltip"
+      data-bs-placement="left"
+      title="Instagram"
     >
       <img src="./assets/images/icons/icon-ig.svg" alt="ig icon">
     </a>
@@ -43,7 +53,12 @@
   <li>
     <a
       href="#"
-      class="d-block bg-light rounded-pill"
+      class="js-link-icon js-tooltip-icons
+        hover-animation-swing transition-duration-1
+        d-block"
+      data-bs-toggle="tooltip"
+      data-bs-placement="left"
+      title="@ Line 社群"
     >
       <img src="./assets/images/icons/icon-line.svg" alt="line icon">
     </a>
@@ -54,7 +69,7 @@
     <nav class="navbar navbar-expand-lg
       navbar-light bg-secondary
       w-100
-      py-2.5
+      py-10
       z-index-999
       shadow-sm
       position-sticky top-0"
@@ -132,11 +147,12 @@
       </li>
     </ul>
 
-    <ul class="d-flex justify-content-center py-1 p-lg-0">
-      <li class="me-2">
+    <ul class="d-flex justify-content-center py-4 p-lg-0">
+      <li class="me-8">
         <a
           href="./reserve_step1_selectCourse.html"
-          class="btn btn-outline-primary btn-lg py-1 px-2 fw-normal"
+          class="btn btn-outline-primary btn-lg py-4 px-8 fw-normal
+          animate__animated animate__tada transition-duration-1"
         >
           立即預約
         </a>
@@ -144,7 +160,7 @@
       <li>
         <a
           href="./contactUs.html"
-          class="btn btn-outline-primary btn-lg py-1 px-2 fw-normal"
+          class="btn btn-outline-primary btn-lg py-4 px-8 fw-normal"
         >
           聯絡我們
         </a>
@@ -155,9 +171,9 @@
     </nav>
 
     
-<main class="pt-6 pt-md-8 pb-11 pb-md-10 pb-lg-13.75">
+<main class="pt-24 pt-md-32 pb-44 pb-md-40 pb-lg-55">
   <section class="container">
-    <div class="overflow-hidden mb-3 mb-md-4">
+    <div class="overflow-hidden mb-12 mb-md-16">
       <h2
         class="fs-3 text-primary text-center"
         data-aos="fade-up"
@@ -169,7 +185,7 @@
     </div>
 
     <div class="row">
-      <div class="col-lg-7 pb-5 pb-lg-0">
+      <div class="col-lg-7 pb-20 pb-lg-0">
         <div
           class="rounded-pill overflow-hidden"
           data-aos="fade-up"
@@ -187,9 +203,9 @@
           </div>
         </div>
 
-        <ul class="text-primary pt-3">
+        <ul class="text-primary pt-12">
           <li
-            class="mb-1 overflow-hidden"
+            class="mb-4 overflow-hidden"
             data-aos="fade-up"
             data-aos-duration="1200"
             data-aos-easing="ease-out-back"
@@ -201,7 +217,7 @@
           </li>
 
           <li
-            class="mb-1"
+            class="mb-4"
             data-aos="fade-up"
             data-aos-duration="1200"
             data-aos-easing="ease-out-back"
@@ -219,9 +235,9 @@
             >
               如何前往：
             </p>
-            <ol class="ms-2">
+            <ol class="ms-8">
               <li
-                class="mb-3"
+                class="mb-12"
                 data-aos="fade-up"
                 data-aos-duration="900"
                 data-aos-easing="ease-out-back"
@@ -230,7 +246,7 @@
                 <p>搭乘捷運：紅線到正義站 3 號出口，延正義路方向至北信街交叉口即可。</p>
               </li>
               <li
-                class="mb-3"
+                class="mb-12"
                 data-aos="fade-up"
                 data-aos-duration="900"
                 data-aos-easing="ease-out-back"
@@ -258,18 +274,18 @@
         data-aos-easing="ease-out-back"
         data-aos-delay="100"
       >
-        <div class="bg-secondary rounded-pill text-primary p-4">
-          <form action="" method="POST" class="js-msg-form">
+        <div class="bg-secondary rounded-pill text-primary p-16">
+          <form action="#" method="POST" class="js-msg-form">
 
-            <h3 class="fs-4 fw-light pb-2 pb-md-3">
+            <h3 class="fs-4 fw-light pb-8 pb-md-12">
               意見回饋&問題詢問
             </h3>
 
-            <ul class="mb-2 mb-md-3">
-              <li class="mb-2">
+            <ul class="mb-8 mb-md-12">
+              <li class="mb-8">
                 <label
                   for="userName"
-                  class="form-label mb-1"
+                  class="form-label mb-4"
                 >
                   姓名
                 </label>
@@ -280,38 +296,52 @@
                   class="form-control w-100"
                 >
               </li>
-              <li class="mb-2">
+              <li class="mb-8">
                 <label
                   for="userEmail"
-                  class="form-label mb-1"
+                  class="form-label mb-4"
                 >
                   電子信箱
                 </label>
                 <input
                   type="email"
+                  name="Email"
                   placeholder="email@example.com"
                   id="userEmail"
-                  class="form-control w-100"
+                  class="form-control js-form-email w-100"
                 >
+                <p class="js-validate-msg
+                  validate-msg
+                  fs-8 text-danger text-end
+                  pt-4"
+                ></p>
               </li>
-              <li class="mb-2">
+              <li class="mb-8">
                 <label
                   for="userPhone"
-                  class="form-label mb-1"
+                  class="form-label mb-4"
                 >
                   手機號碼
                 </label>
                 <input
                   type="tel"
-                  placeholder="0912-345-678"
+                  name="手機號碼"
+                  placeholder="請輸入手機號碼"
+                  pattern="^09\d{8}$"
+                  maxlength="10"
                   id="userPhone"
-                  class="form-control w-100"
+                  class="form-control js-form-phone w-100"
                 >
+                <p class="js-validate-msg
+                  validate-msg
+                  fs-8 text-danger text-end
+                  pt-4"
+                ></p>
               </li>
               <li>
                 <label
                   for="userMassage"
-                  class="form-label mb-1"
+                  class="form-label mb-4"
                 >
                   意見回饋
                 </label>
@@ -339,12 +369,12 @@
 </main>
 
     <footer class="text-light bg-primary">
-  <div class="border-bottom border-light py-3 py-md-4">
+  <div class="border-bottom border-light py-12 py-md-16">
     <div class="container">
       <div class="row justify-content-between">
         <div class="col-lg-6">
           <h3
-          class="fw-light mb-1"
+          class="fw-light mb-4"
           data-aos="fade-right"
           data-aos-duration="500"
           data-aos-easing="ease-in"
@@ -364,28 +394,36 @@
               >
                 <input
                   type="email"
+                  name="Email"
                   id="subscriptionEmail"
-                  class="form-control text-primary"
+                  class="form-control js-subscription-email text-primary"
                   placeholder="輸入您的電子信箱"
                   aria-label="輸入您的電子信箱"
                   aria-describedby="訂閱信箱"
                 >
-                <label
-                  for="subscriptionEmail"
-                  class="btn btn-primary-light
+                <button
+                  type="button"
+                  class="js-subscription-btn
+                    btn btn-outline-primary-light
                     text-light fw-light
-                    py-1 px-2"
+                    py-4 px-8"
+                  disabled
                 >
                   訂閱
-                </label>
+                </button>
               </div>
             </div>
+            <p class="js-subscription-email-msg
+              validate-msg validate-msg-white
+              fs-8 text-light text-start
+              ms-12 pt-4"
+            ></p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="py-4">
+  <div class="py-16">
     <div class="container">
       <div class="d-flex justify-content-between">
         <h4
@@ -416,7 +454,11 @@
           <li>
             <a
               href="#"
-              class="d-block me-1"
+              class="js-tooltip-icons hover-translate-y-1 transition-duration-1
+                d-block me-4"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              title="Facebook 粉絲團"
             >
               <img src="./assets/images/icons/icon-fb-white.svg" alt="fb icon">
             </a>
@@ -424,15 +466,23 @@
           <li>
             <a
               href="#"
-              class="d-block me-1"
+              class="js-tooltip-icons hover-translate-y-1 transition-duration-1
+                d-block me-4"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              title="Instagram"
             >
-              <img src="./assets/images/icons/icon-ig-white.svg" alt="ig icon" class="text-light">
+              <img src="./assets/images/icons/icon-ig-white.svg" alt="ig icon" class="hover-translate-y-1 transition-duration-1 text-light">
             </a>
           </li>
           <li>
             <a
               href="#"
-              class="d-block"
+              class="js-tooltip-icons hover-translate-y-1 transition-duration-1
+                d-block"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              title="@ Line 社群"
             >
               <img src="./assets/images/icons/icon-line-white.svg" alt="line icon">
             </a>
@@ -452,7 +502,7 @@
             >
               <a
                 href="./courseDescription.html"
-                class="nav-link link-light fw-lighter py-0.5"
+                class="nav-link link-light fw-lighter py-2"
               >
                 課程介紹
               </a>
@@ -466,7 +516,7 @@
             >
               <a
                 href="./classRoom.html"
-                class="nav-link link-light fw-lighter py-0.5"
+                class="nav-link link-light fw-lighter py-2"
               >
                 瑜珈空間
               </a>
@@ -480,7 +530,7 @@
             >
               <a
                 href="./curriculum.html"
-                class="nav-link link-light fw-lighter pt-0.5 pb-1 pb-md-0"
+                class="nav-link link-light fw-lighter pt-2 pb-4 pb-md-0"
               >
                 當月課表
               </a>
@@ -528,9 +578,9 @@
   >
     <div class="modal-content">
       <div class="modal-body
-        py-4 py-md-9
-        ps-md-3 px-lg-7
-        pe-md-4"
+        py-16 py-md-36
+        ps-md-12 px-lg-28
+        pe-md-16"
       >
         <div class="row align-items-center">
           <div class="col-md-5 col-lg-6">
@@ -542,22 +592,22 @@
               >
             </div>
           </div>
-          <div class="col-md-7 col-lg-6 pt-2 pt-md-0">
+          <div class="col-md-7 col-lg-6 pt-8 pt-md-0">
             <h3 class="js-model-title fs-3">
               基礎 Basic
             </h3>
-            <p class="mb-2">
+            <p class="mb-8">
               授課老師：<span class="js-model-teacher">Carol Tang</span>
               <span class="badge rounded-pill
                 fs-8 lh-base fw-lighter text-light
                 bg-primary
-                ms-1.5 px-2 py-0.5"
+                ms-6 px-8 py-2"
               >
                 60 min
               </span>
             </p>
 
-            <p class="mb-2">
+            <p class="mb-8">
               使用掛布懸掛在半空，進行哈達瑜珈體位法練習，藉由地心引力的重力原理，鍛鍊核心肌群，舒緩脊椎壓力。 訓練身體協調性，深層放鬆身體。 課堂裡老師會視同學狀況安排教導倒立動作，對於不敢嘗試倒立的同學來說，藉由掛布的支持與保護，加上老師細心指導，讓同學能更快掌握。
             </p>
 

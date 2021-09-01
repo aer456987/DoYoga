@@ -42,6 +42,174 @@ if (dateDom) {
     buttonClass: 'btn btn-outline-primary border-0 fw-normal'
   });
 }
+
+$('.js-link-animate').on('click', function () {
+  var clickAnimateClass = 'animate__animated animate__backOutRight';
+  $('.js-link-animate').removeClass(clickAnimateClass);
+  $(this).addClass(clickAnimateClass);
+});
+var tooltipIcons = document.querySelectorAll('.js-tooltip-icons');
+tooltipIcons.forEach(function (icon) {
+  var tooltipIcon = new bootstrap.Tooltip(icon);
+});
+"use strict";
+
+var formRules = {
+  name: {
+    rule: /^^[a-zA-Z\s\d]+$/,
+    msg: '不能有特殊符號'
+  },
+  age: {
+    rule: /^\d$/,
+    msg: '只能是數字'
+  },
+  email: {
+    rule: /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z]+$/,
+    msg: '格式錯誤'
+  },
+  phone: {
+    rule: /^09\d{8}$/,
+    msg: '格式錯誤，須為 09 開頭的 10 碼數字'
+  }
+}; // 訂閱 Email
+
+$('.js-subscription-email').on('input propertychange', function () {
+  var inputName = $(this).attr('name');
+  var inputValue = $(this).val();
+  var rule = formRules.email.rule;
+  var errorMsg = formRules.email.msg;
+  var errorMsgContent = $('.js-subscription-email-msg');
+
+  if (rule.test(inputValue)) {
+    errorMsgContent.removeClass('d-block').text('');
+    $('.js-subscription-btn').prop('disabled', false).addClass('btn-primary-light');
+  } else {
+    errorMsgContent.addClass('d-block').text("".concat(inputName, " ").concat(errorMsg));
+    $('.js-subscription-btn').prop('disabled', true).removeClass('btn-primary-light');
+  }
+});
+$('.js-subscription-btn').on('click', function () {
+  $('.js-subscription-email').val('');
+}); // 驗證欄位資料
+
+$('#reserveName').on('input propertychange', function () {
+  var data = {
+    input: $(this),
+    inputValue: $(this).val(),
+    rule: formRules.name.rule,
+    errorMsg: formRules.name.msg
+  };
+  validationInputFn(data);
+});
+$('#reserveAge').on('input propertychange', function () {
+  var data = {
+    input: $(this),
+    inputValue: $(this).val(),
+    rule: formRules.age.rule,
+    errorMsg: formRules.age.msg
+  };
+  validationInputFn(data);
+});
+$('.js-form-email').on('input propertychange', function () {
+  var data = {
+    input: $(this),
+    inputValue: $(this).val(),
+    rule: formRules.email.rule,
+    errorMsg: formRules.email.msg
+  };
+  validationInputFn(data);
+});
+$('.js-form-phone').on('input propertychange', function () {
+  var data = {
+    input: $(this),
+    inputValue: $(this).val(),
+    rule: formRules.phone.rule,
+    errorMsg: formRules.phone.msg
+  };
+  validationInputFn(data);
+}); // 訂課資料
+
+$('.js-reserve-data').on('change', function () {
+  var reserveDate = {};
+  reserveDate = getReserveDate();
+  checkInputValue();
+});
+
+function validationInputFn(data) {
+  var borderStyle = ['border-danger', 'animate__animated', 'animate__headShake'];
+  var input = data.input,
+      inputValue = data.inputValue,
+      rule = data.rule,
+      errorMsg = data.errorMsg;
+  var inputName = $(input).attr('name');
+  var errorMsgContent = $(input).next();
+
+  if (!rule.test(inputValue)) {
+    input.addClass(borderStyle);
+    errorMsgContent.addClass('d-block');
+
+    if (inputValue === '') {
+      $(errorMsgContent).text("".concat(inputName, " \u70BA\u5FC5\u586B"));
+    } else {
+      $(errorMsgContent).text("".concat(inputName, " ").concat(errorMsg));
+    }
+  } else {
+    input.removeClass(borderStyle);
+    errorMsgContent.removeClass('d-block').text('');
+  }
+}
+
+function getReserveDate() {
+  var inputData = {
+    muscleEndurance: [],
+    userData: {}
+  };
+  inputData.reserveDate = changeDate();
+  inputData.isDoYoga = $('input[name="practiseYogaRadio"]:checked').val();
+  inputData.sportsTime = $('input[name="sportsTime"]:checked').val();
+  inputData.muscleEndurance = getProblemBetter(getReserveDate.muscleEndurance);
+  inputData.userData.name = $('#reserveName').val();
+  inputData.userData.age = $('#reserveAge').val();
+  inputData.userData.gender = $('#reserveGender').val();
+  inputData.userData.email = $('#reserveEmail').val();
+  inputData.userData.phone = $('#reservePhone').val();
+  return inputData;
+}
+
+function checkInputValue() {
+  var reserveDate = changeDate();
+  var isDoYoga = $('input[name="practiseYogaRadio"]:checked').val();
+  var muscleEndurance = $('input[name="problemBetterCheckbox"]:checked').val();
+  var sportsTime = $('input[name="sportsTime"]:checked').val();
+  var formReserve = document.querySelectorAll('.js-form-reserve');
+  var reserveArray = [isDoYoga, muscleEndurance, sportsTime, reserveDate];
+  var reserveBtn = $('.js-form-reserve-btn');
+  formReserve.forEach(function (items) {
+    reserveArray.push(items.value);
+  });
+  reserveArray.forEach(function (input) {
+    if (input === undefined || input === '' || input === NaN || input === null) {
+      reserveBtn.removeClass('btn-primary-light').addClass('btn-outline-primary-light disabled');
+    } else {
+      reserveBtn.removeClass('btn-outline-primary-light disabled').addClass('btn-primary-light');
+    }
+  });
+}
+
+function changeDate() {
+  var date = $('#reserveDate').val().split('/');
+  return new Date("".concat(date[2], "/").concat(date[0], "/").concat(date[1])) / 1000;
+}
+
+function getProblemBetter() {
+  var valueArray = [];
+  $('input[name="problemBetterCheckbox"]').each(function () {
+    if ($(this).prop('checked')) {
+      valueArray.push($(this).val());
+    }
+  });
+  return valueArray;
+}
 "use strict";
 
 var openModalBtn = document.querySelectorAll('.js-course-modal-btn');
@@ -72,7 +240,7 @@ $('.js-next-step').hide();
 $('.js-experience-cards').on('click', function () {
   var courseName = $(this).attr('data-name');
   var onCilckCardClass = 'border-4';
-  var unCilckCardClass = 'hover-scale-1 hover-shadow transition-duration-0.2';
+  var unCilckCardClass = 'hover-rotate-1 hover-shadow transition-duration-1';
   var onCilckExperienceClass = 'arrow';
   var unCilckExperienceClass = 'd-none d-lg-block';
   $('.js-experience-card').removeClass(onCilckCardClass).addClass(unCilckCardClass);

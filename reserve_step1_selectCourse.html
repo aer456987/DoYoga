@@ -24,18 +24,28 @@
   d-none d-lg-block
   z-index-3"
 >
-  <li class="mb-1.75">
+  <li class="mb-7">
     <a
       href="#"
-      class="d-block bg-light rounded-circle border border-2 border-light"
+      class="js-link-icon js-tooltip-icons
+        hover-animation-swing transition-duration-1
+        d-block"
+      data-bs-toggle="tooltip"
+      data-bs-placement="left"
+      title="Facebook 粉絲團"
     >
       <img src="./assets/images/icons/icon-fb.svg" alt="fb icon" class="user-select-none">
     </a>
   </li>
-  <li class="mb-1.75">
+  <li class="mb-7">
     <a
       href="#"
-      class="d-block bg-light rounded-circle"
+      class="js-link-icon js-tooltip-icons
+        hover-animation-swing transition-duration-1
+        d-block"
+      data-bs-toggle="tooltip"
+      data-bs-placement="left"
+      title="Instagram"
     >
       <img src="./assets/images/icons/icon-ig.svg" alt="ig icon">
     </a>
@@ -43,7 +53,12 @@
   <li>
     <a
       href="#"
-      class="d-block bg-light rounded-pill"
+      class="js-link-icon js-tooltip-icons
+        hover-animation-swing transition-duration-1
+        d-block"
+      data-bs-toggle="tooltip"
+      data-bs-placement="left"
+      title="@ Line 社群"
     >
       <img src="./assets/images/icons/icon-line.svg" alt="line icon">
     </a>
@@ -54,7 +69,7 @@
     <nav class="navbar navbar-expand-lg
       navbar-light bg-secondary
       w-100
-      py-2.5
+      py-10
       z-index-999
       shadow-sm
       position-sticky top-0"
@@ -132,11 +147,12 @@
       </li>
     </ul>
 
-    <ul class="d-flex justify-content-center py-1 p-lg-0">
-      <li class="me-2">
+    <ul class="d-flex justify-content-center py-4 p-lg-0">
+      <li class="me-8">
         <a
           href="./reserve_step1_selectCourse.html"
-          class="btn btn-outline-primary btn-lg py-1 px-2 fw-normal"
+          class="btn btn-outline-primary btn-lg py-4 px-8 fw-normal
+          animate__animated animate__tada transition-duration-1"
         >
           立即預約
         </a>
@@ -144,7 +160,7 @@
       <li>
         <a
           href="./contactUs.html"
-          class="btn btn-outline-primary btn-lg py-1 px-2 fw-normal"
+          class="btn btn-outline-primary btn-lg py-4 px-8 fw-normal"
         >
           聯絡我們
         </a>
@@ -155,9 +171,9 @@
     </nav>
 
     
-<main class="pt-6 pt-md-8 pb-11 pb-md-10 pb-lg-13">
-  <section class="container pb-7 pb-lg-9">
-    <div class="overflow-hidden mb-3 mb-md-2">
+<main class="pt-24 pt-md-32 pb-44 pb-md-40 pb-lg-52">
+  <section class="container pb-28 pb-lg-36">
+    <div class="overflow-hidden mb-12 mb-md-8">
       <h2
         class="fs-3 text-primary text-center"
         data-aos="fade-up"
@@ -168,10 +184,10 @@
       </h2>
     </div>
 
-    <ul class="row justify-content-center mb-4">
+    <ul class="row justify-content-center mb-16">
       <li class="col-4 col-md-3 col-lg-2 overflow-hidden">
         <div
-          class="text-light bg-primary rounded-pill text-center py-1.5 px-1"
+          class="text-light bg-primary rounded-pill text-center py-6 px-4"
           data-aos="fade-right"
           data-aos-duration="1000"
           data-aos-easing="ease-out"
@@ -183,7 +199,7 @@
 
       <li class="col-4 col-md-3 col-lg-2 overflow-hidden">
         <div
-          class="text-primary bg-secondary rounded-pill text-center py-1.5 px-1"
+          class="text-primary bg-secondary rounded-pill text-center py-6 px-4"
           data-aos="fade-right"
           data-aos-duration="1300"
           data-aos-easing="ease-out"
@@ -195,7 +211,7 @@
 
       <li class="col-4 col-md-3 col-lg-2 overflow-hidden">
         <div
-          class="text-primary bg-secondary rounded-pill text-center py-1.5 px-1"
+          class="text-primary bg-secondary rounded-pill text-center py-6 px-4"
           data-aos="fade-right"
           data-aos-duration="1500"
           data-aos-easing="ease-out"
@@ -215,13 +231,13 @@
         data-aos-delay="300"
         data-name="首次體驗"
       >
-        <div class="card js-experience-card mb-2 mb-lg-0
+        <div class="card js-experience-card mb-8 mb-lg-0
           d-none d-md-block d-lg-none
           overflow-hidden
           border border-primary-light
-          hover-scale-1
+          hover-rotate-1
           hover-shadow
-          transition-duration-0.2
+          transition-duration-1
           cursor-pointer"
         >
           <div class="row g-0">
@@ -235,20 +251,20 @@
               </div>
             </div>
             <div class="col-md-6">
-              <div class="card-body text-primary p-3">
+              <div class="card-body text-primary p-12">
                 <h4 class="card-title fs-5">
                   首次體驗
-                  <span class="d-block text-primary-light pt-0.5">
+                  <span class="d-block text-primary-light pt-2">
                     NT $450 / 次
                   </span>
                 </h4>
-                <p class="text-start mb-3">
+                <p class="text-start mb-12">
                   分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。
                 </p>
 
                 <button
                   type="button"
-                  class="btn btn-primary-light py-1 w-100"
+                  class="btn btn-primary-light py-4 w-100"
                 >
                   選擇課程
                 </button>
@@ -261,9 +277,9 @@
           d-md-none d-lg-block
           overflow-hidden
           border border-primary-light
-          hover-scale-1
+          hover-rotate-1
           hover-shadow
-          transition-duration-0.2
+          transition-duration-1
           cursor-pointer"
         >
           <div class="position-relative overflow-hidden ratio ratio-7x5">
@@ -274,20 +290,20 @@
             >
           </div>
 
-          <div class="card-body text-primary text-center p-3">
+          <div class="card-body text-primary text-center p-12">
             <h4 class="card-title fs-5">
               首次體驗
-              <span class="d-block text-primary-light pt-0.5">
+              <span class="d-block text-primary-light pt-2">
                 NT $450 / 次
               </span>
             </h4>
-            <p class="text-start mb-5 mb-md-3 mb-lg-5">
+            <p class="text-start mb-20 mb-md-12 mb-lg-20">
               分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。
             </p>
 
             <button
               type="button"
-              class="btn btn-primary-light py-1 w-100"
+              class="btn btn-primary-light py-4 w-100"
             >
               選擇課程
             </button>
@@ -303,13 +319,13 @@
         data-aos-delay="400"
         data-name="短期體驗"
       >
-        <div class="card js-experience-card mb-2 mb-lg-0
+        <div class="card js-experience-card mb-8 mb-lg-0
           d-none d-md-block d-lg-none
           overflow-hidden
           border border-primary-light
-          hover-scale-1
+          hover-rotate-1
           hover-shadow
-          transition-duration-0.2
+          transition-duration-1
           cursor-pointer"
         >
           <div class="row g-0">
@@ -323,20 +339,20 @@
               </div>
             </div>
             <div class="col-md-6">
-              <div class="card-body text-primary p-3">
+              <div class="card-body text-primary p-12">
                 <h4 class="card-title fs-5">
                   短期體驗
-                  <span class="d-block text-primary-light pt-0.5">
+                  <span class="d-block text-primary-light pt-2">
                     NT $1800 / 月
                   </span>
                 </h4>
-                <p class="text-start mb-3">
+                <p class="text-start mb-12">
                   分基礎、中級、高級可以選擇。想試著培養瑜珈習慣者可以選擇此方案。
                 </p>
 
                 <button
                   type="button"
-                  class="btn btn-primary-light py-1 w-100"
+                  class="btn btn-primary-light py-4 w-100"
                 >
                   選擇課程
                 </button>
@@ -349,9 +365,9 @@
           d-md-none d-lg-block
           overflow-hidden
           border border-primary-light
-          hover-scale-1
+          hover-rotate-1
           hover-shadow
-          transition-duration-0.2
+          transition-duration-1
           cursor-pointer"
         >
           <div class="position-relative overflow-hidden ratio ratio-7x5">
@@ -362,20 +378,20 @@
             >
           </div>
 
-          <div class="card-body text-primary text-center p-3">
+          <div class="card-body text-primary text-center p-12">
             <h4 class="card-title fs-5">
               短期體驗
-              <span class="d-block text-primary-light pt-0.5">
+              <span class="d-block text-primary-light pt-2">
                 NT $1800 / 月
               </span>
             </h4>
-            <p class="text-start mb-5 mb-md-3 mb-lg-5">
+            <p class="text-start mb-20 mb-md-12 mb-lg-20">
               分基礎、中級、高級可以選擇。想試著培養瑜珈習慣者可以選擇此方案。
             </p>
 
             <button
               type="button"
-              class="btn btn-primary-light py-1 w-100"
+              class="btn btn-primary-light py-4 w-100"
             >
               選擇課程
             </button>
@@ -395,9 +411,9 @@
           d-none d-md-block d-lg-none
           overflow-hidden
           border border-primary-light
-          hover-scale-1
+          hover-rotate-1
           hover-shadow
-          transition-duration-0.2
+          transition-duration-1
           cursor-pointer"
         >
           <div class="row g-0">
@@ -411,20 +427,20 @@
               </div>
             </div>
             <div class="col-md-6">
-              <div class="card-body text-primary p-3">
+              <div class="card-body text-primary p-12">
                 <h4 class="card-title fs-5">
                   長期體驗
-                  <span class="d-block text-primary-light pt-0.5">
+                  <span class="d-block text-primary-light pt-2">
                     NT $5600 / 季
                   </span>
                 </h4>
-                <p class="text-start mb-3">
+                <p class="text-start mb-12">
                   分基礎、中級、高級可以選擇。有長期習慣做瑜伽者建議選擇此方案。
                 </p>
 
                 <button
                   type="button"
-                  class="btn btn-primary-light py-1 w-100"
+                  class="btn btn-primary-light py-4 w-100"
                 >
                   選擇課程
                 </button>
@@ -437,9 +453,9 @@
           d-md-none d-lg-block
           overflow-hidden
           border border-primary-light
-          hover-scale-1
+          hover-rotate-1
           hover-shadow
-          transition-duration-0.2
+          transition-duration-1
           cursor-pointer"
         >
           <div class="position-relative overflow-hidden ratio ratio-7x5">
@@ -450,20 +466,20 @@
             >
           </div>
 
-          <div class="card-body text-primary text-center p-3">
+          <div class="card-body text-primary text-center p-12">
             <h4 class="card-title fs-5">
               長期體驗
-              <span class="d-block text-primary-light pt-0.5">
+              <span class="d-block text-primary-light pt-2">
                 NT $5600 / 季
               </span>
             </h4>
-            <p class="text-start mb-5 mb-md-3 mb-lg-5">
+            <p class="text-start mb-20 mb-md-12 mb-lg-20">
               分基礎、中級、高級可以選擇。有長期習慣做瑜伽者建議選擇此方案。
             </p>
 
             <button
               type="button"
-              class="btn btn-primary-light py-1 w-100"
+              class="btn btn-primary-light py-4 w-100"
             >
               選擇課程
             </button>
@@ -474,13 +490,13 @@
   </section>
 
   <section
-    class="js-scheme-show bg-primary mb-4 mb-lg-5"
+    class="js-scheme-show bg-primary mb-16 mb-lg-20"
     data-aos="fade-up"
     data-aos-duration="1000"
   >
-    <div class="container pt-4 pt-lg-5 pb-6 pb-lg-8">
+    <div class="container pt-16 pt-lg-20 pb-24 pb-lg-32">
 
-      <div class="overflow-hidden  mb-3 mb-lg-4">
+      <div class="overflow-hidden  mb-12 mb-lg-16">
         <h2
           class="fs-3 text-light text-center"
           data-aos="fade-up"
@@ -495,12 +511,12 @@
         overflow-visible overflow-lg-hidden"
       >
         <ul class="swiper-wrapper align-items-center">
-          <li class="swiper-slide mb-3 mb-md-0">
+          <li class="swiper-slide mb-12 mb-md-0">
             <div
               class="card js-scheme-card
                 border border-4 border-light
                 bg-primary-light
-                p-3
+                p-12
                 shadow
                 hover-border
                 cursor-pointer"
@@ -519,31 +535,31 @@
                   check_circle
                 </span>
               </div>
-              <p class="mb-2">
+              <p class="mb-8">
                 基礎課程
                 <span class="badge rounded-pill
                   fs-8 lh-base fw-lighter text-light
                   bg-primary
-                  ms-1 px-2 py-0.5"
+                  ms-4 px-8 py-2"
                 >
                   60 min
                 </span>
               </p>
               <ul>
-                <li class="mb-0.5">・入體位法動作解說</li>
-                <li class="mb-0.5">・瑜珈基礎動作、順位</li>
+                <li class="mb-2">・入體位法動作解說</li>
+                <li class="mb-2">・瑜珈基礎動作、順位</li>
                 <li>・適合任何階段練習者</li>
               </ul>
             </div>
           </div>
           </li>
 
-          <li class="swiper-slide mb-3 mb-md-0">
+          <li class="swiper-slide mb-12 mb-md-0">
             <div
               class="card js-scheme-card
                 border border-4 border-transparent
                 bg-primary-light 
-                p-3
+                p-12
                 shadow
                 hover-border
                 cursor-pointer"
@@ -562,19 +578,19 @@
                     check_circle
                   </span>
                 </div>
-                <p class="mb-2">
+                <p class="mb-8">
                   艾揚格、哈達、寰宇
                   <span class="badge rounded-pill
                     fs-8 lh-base fw-lighter text-light
                     bg-primary
-                    ms-1 px-2 py-0.5"
+                    ms-4 px-8 py-2"
                   >
                     60 min
                   </span>
                 </p>
                 <ul>
-                  <li class="mb-0.5">・刺激身體七個層次為核心</li>
-                  <li class="mb-0.5">・結合流暢體位法練習、呼吸、觀想</li>
+                  <li class="mb-2">・刺激身體七個層次為核心</li>
+                  <li class="mb-2">・結合流暢體位法練習、呼吸、觀想</li>
                   <li>・適合半年以上練習者</li>
                 </ul>
               </div>
@@ -586,7 +602,7 @@
               class="card js-scheme-card
                 border border-4 border-transparent
                 bg-primary-light
-                p-3
+                p-12
                 shadow
                 hover-border
                 cursor-pointer"
@@ -605,19 +621,19 @@
                     check_circle
                   </span>
                 </div>
-                <p class="mb-2">
+                <p class="mb-8">
                   阿斯坦加、陰陽
                   <span class="badge rounded-pill
                     fs-8 lh-base fw-lighter text-light
                     bg-primary
-                    ms-1 px-2 py-0.5"
+                    ms-4 px-8 py-2"
                   >
                     60 min
                   </span>
                 </p>
                 <ul>
-                  <li class="mb-0.5">・充分打開身體每個部位</li>
-                  <li class="mb-0.5">・顯著提升力量與柔軟度</li>
+                  <li class="mb-2">・充分打開身體每個部位</li>
+                  <li class="mb-2">・顯著提升力量與柔軟度</li>
                   <li>・適合一年以上練習者</li>
                 </ul>
               </div>
@@ -631,15 +647,15 @@
 
   <section class="container text-primary">
     <div class="row align-items-center flex-column">
-      <div class="col-md-8 col-lg-6 mb-4 text-center">
-
-        <div class="js-scheme-name-show overflow-hidden mb-5">
+      <div class="col-md-8 col-lg-6 mb-16 text-center">
+<!-- -32 -->
+        <div class="js-scheme-name-show overflow-hidden mb-20">
           <div
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-easing="ease"
           >
-            <p class="fs-7 d-block mb-0.5">
+            <p class="fs-7 d-block mb-2">
               你選擇的是
             </p>
             <h4 class="js-choose-class-name fs-5
@@ -652,7 +668,7 @@
         </div>
 
 
-        <div class="overflow-hidden mb-2">
+        <div class="overflow-hidden mb-8">
           <h2
             class="fs-3"
             data-aos="fade-up"
@@ -663,9 +679,9 @@
           </h2>
         </div>
 
-        <ol class="text-start ps-2">
+        <ol class="text-start ps-8">
           <li
-            class="mb-0.5"
+            class="mb-2"
             data-aos="fade-up"
             data-aos-duration="1100"
             data-aos-easing="ease"
@@ -674,7 +690,7 @@
             如果有特殊體質、特殊狀況，請主動告知。
           </li>
           <li
-            class="mb-0.5"
+            class="mb-2"
             data-aos="fade-up"
             data-aos-duration="1100"
             data-aos-easing="ease"
@@ -683,7 +699,7 @@
             取消預約或時間異動請於預約日前一天晚間 21:00 前告知，預約當日請勿異動或取消，以免影響您日後再預約的個人信用及難度。
           </li>
           <li
-            class="mb-0.5"
+            class="mb-2"
             data-aos="fade-up"
             data-aos-duration="1100"
             data-aos-easing="ease"
@@ -713,7 +729,7 @@
       >
         <a
           href="./reserve_step2_fillOrder.html"
-          class="btn btn-primary-light w-100 py-1"
+          class="btn btn-primary-light w-100 py-4"
         >
           繼續預約
         </a>
@@ -723,12 +739,12 @@
 </main>
 
     <footer class="text-light bg-primary">
-  <div class="border-bottom border-light py-3 py-md-4">
+  <div class="border-bottom border-light py-12 py-md-16">
     <div class="container">
       <div class="row justify-content-between">
         <div class="col-lg-6">
           <h3
-          class="fw-light mb-1"
+          class="fw-light mb-4"
           data-aos="fade-right"
           data-aos-duration="500"
           data-aos-easing="ease-in"
@@ -748,28 +764,36 @@
               >
                 <input
                   type="email"
+                  name="Email"
                   id="subscriptionEmail"
-                  class="form-control text-primary"
+                  class="form-control js-subscription-email text-primary"
                   placeholder="輸入您的電子信箱"
                   aria-label="輸入您的電子信箱"
                   aria-describedby="訂閱信箱"
                 >
-                <label
-                  for="subscriptionEmail"
-                  class="btn btn-primary-light
+                <button
+                  type="button"
+                  class="js-subscription-btn
+                    btn btn-outline-primary-light
                     text-light fw-light
-                    py-1 px-2"
+                    py-4 px-8"
+                  disabled
                 >
                   訂閱
-                </label>
+                </button>
               </div>
             </div>
+            <p class="js-subscription-email-msg
+              validate-msg validate-msg-white
+              fs-8 text-light text-start
+              ms-12 pt-4"
+            ></p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="py-4">
+  <div class="py-16">
     <div class="container">
       <div class="d-flex justify-content-between">
         <h4
@@ -800,7 +824,11 @@
           <li>
             <a
               href="#"
-              class="d-block me-1"
+              class="js-tooltip-icons hover-translate-y-1 transition-duration-1
+                d-block me-4"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              title="Facebook 粉絲團"
             >
               <img src="./assets/images/icons/icon-fb-white.svg" alt="fb icon">
             </a>
@@ -808,15 +836,23 @@
           <li>
             <a
               href="#"
-              class="d-block me-1"
+              class="js-tooltip-icons hover-translate-y-1 transition-duration-1
+                d-block me-4"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              title="Instagram"
             >
-              <img src="./assets/images/icons/icon-ig-white.svg" alt="ig icon" class="text-light">
+              <img src="./assets/images/icons/icon-ig-white.svg" alt="ig icon" class="hover-translate-y-1 transition-duration-1 text-light">
             </a>
           </li>
           <li>
             <a
               href="#"
-              class="d-block"
+              class="js-tooltip-icons hover-translate-y-1 transition-duration-1
+                d-block"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              title="@ Line 社群"
             >
               <img src="./assets/images/icons/icon-line-white.svg" alt="line icon">
             </a>
@@ -836,7 +872,7 @@
             >
               <a
                 href="./courseDescription.html"
-                class="nav-link link-light fw-lighter py-0.5"
+                class="nav-link link-light fw-lighter py-2"
               >
                 課程介紹
               </a>
@@ -850,7 +886,7 @@
             >
               <a
                 href="./classRoom.html"
-                class="nav-link link-light fw-lighter py-0.5"
+                class="nav-link link-light fw-lighter py-2"
               >
                 瑜珈空間
               </a>
@@ -864,7 +900,7 @@
             >
               <a
                 href="./curriculum.html"
-                class="nav-link link-light fw-lighter pt-0.5 pb-1 pb-md-0"
+                class="nav-link link-light fw-lighter pt-2 pb-4 pb-md-0"
               >
                 當月課表
               </a>
@@ -912,9 +948,9 @@
   >
     <div class="modal-content">
       <div class="modal-body
-        py-4 py-md-9
-        ps-md-3 px-lg-7
-        pe-md-4"
+        py-16 py-md-36
+        ps-md-12 px-lg-28
+        pe-md-16"
       >
         <div class="row align-items-center">
           <div class="col-md-5 col-lg-6">
@@ -926,22 +962,22 @@
               >
             </div>
           </div>
-          <div class="col-md-7 col-lg-6 pt-2 pt-md-0">
+          <div class="col-md-7 col-lg-6 pt-8 pt-md-0">
             <h3 class="js-model-title fs-3">
               基礎 Basic
             </h3>
-            <p class="mb-2">
+            <p class="mb-8">
               授課老師：<span class="js-model-teacher">Carol Tang</span>
               <span class="badge rounded-pill
                 fs-8 lh-base fw-lighter text-light
                 bg-primary
-                ms-1.5 px-2 py-0.5"
+                ms-6 px-8 py-2"
               >
                 60 min
               </span>
             </p>
 
-            <p class="mb-2">
+            <p class="mb-8">
               使用掛布懸掛在半空，進行哈達瑜珈體位法練習，藉由地心引力的重力原理，鍛鍊核心肌群，舒緩脊椎壓力。 訓練身體協調性，深層放鬆身體。 課堂裡老師會視同學狀況安排教導倒立動作，對於不敢嘗試倒立的同學來說，藉由掛布的支持與保護，加上老師細心指導，讓同學能更快掌握。
             </p>
 
