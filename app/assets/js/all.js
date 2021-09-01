@@ -42,3 +42,16 @@ if (dateDom) {
     buttonClass: 'btn btn-outline-primary border-0 fw-normal',
   });
 }
+
+
+$('.js-link-icon').on('click', function() {
+  const clickAnimateClass = 'animate__animated animate__rubberBand';
+  $('.js-link-icon').removeClass(clickAnimateClass);
+  $(this).addClass(clickAnimateClass);
+});
+
+
+const tooltipIcons = document.querySelectorAll('.js-tooltip-icons');
+tooltipIcons.forEach(function(icon) {
+  const tooltipIcon = new bootstrap.Tooltip(icon);
+});

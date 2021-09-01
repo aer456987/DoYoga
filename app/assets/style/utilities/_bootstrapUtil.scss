@@ -44,7 +44,7 @@ $utilities: map-merge(
       property: transition-duration,
       class: transition-duration,
       values: (
-        0\.2: .2s,
+        1: .2s,
       ),
     ),
     "text-shadow": (
