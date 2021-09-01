@@ -8,7 +8,7 @@ $('.js-next-step').hide();
 $('.js-experience-cards').on('click', function() {
   const courseName = $(this).attr('data-name');
   const onCilckCardClass = 'border-4';
-  const unCilckCardClass = 'hover-scale-1 hover-shadow transition-duration-1';
+  const unCilckCardClass = 'hover-rotate-1 hover-shadow transition-duration-1';
   const onCilckExperienceClass = 'arrow';
   const unCilckExperienceClass = 'd-none d-lg-block';
 

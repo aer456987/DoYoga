@@ -44,9 +44,9 @@ if (dateDom) {
 }
 
 
-$('.js-link-icon').on('click', function() {
-  const clickAnimateClass = 'animate__animated animate__rubberBand';
-  $('.js-link-icon').removeClass(clickAnimateClass);
+$('.js-link-animate').on('click', function() {
+  const clickAnimateClass = 'animate__animated animate__backOutRight';
+  $('.js-link-animate').removeClass(clickAnimateClass);
   $(this).addClass(clickAnimateClass);
 });
 

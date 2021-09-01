@@ -109,7 +109,7 @@ current: contactUs
         data-aos-delay="100"
       >
         <div class="bg-secondary rounded-pill text-primary p-16">
-          <form action="" method="POST" class="js-msg-form">
+          <form action="#" method="POST" class="js-msg-form">
 
             <h3 class="fs-4 fw-light pb-8 pb-md-12">
               意見回饋&問題詢問
@@ -139,10 +139,16 @@ current: contactUs
                 </label>
                 <input
                   type="email"
+                  name="Email"
                   placeholder="email@example.com"
                   id="userEmail"
-                  class="form-control w-100"
+                  class="form-control js-form-email w-100"
                 >
+                <p class="js-validate-msg
+                  validate-msg
+                  fs-8 text-danger text-end
+                  pt-2"
+                >123</p>
               </li>
               <li class="mb-8">
                 <label
@@ -153,10 +159,17 @@ current: contactUs
                 </label>
                 <input
                   type="tel"
-                  placeholder="0912-345-678"
+                  placeholder="0912345678"
+                  pattern="^09\d{8}$"
+                  maxlength="10"
                   id="userPhone"
                   class="form-control w-100"
                 >
+                <p class="js-validate-msg
+                  validate-msg
+                  fs-8 text-danger text-end
+                  pt-2"
+                >123</p>
               </li>
               <li>
                 <label
