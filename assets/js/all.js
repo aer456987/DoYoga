@@ -60,8 +60,8 @@ var formRules = {
     msg: '不能有特殊符號'
   },
   age: {
-    rule: /^\d$/,
-    msg: '只能是數字'
+    rule: /^\d{2}$/,
+    msg: '只能是 2 碼數字'
   },
   email: {
     rule: /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z]+$/,
@@ -173,6 +173,7 @@ function getReserveDate() {
   inputData.userData.gender = $('#reserveGender').val();
   inputData.userData.email = $('#reserveEmail').val();
   inputData.userData.phone = $('#reservePhone').val();
+  inputData.userData.age = $('#reserveAge').val().parseInt();
   return inputData;
 }
 
