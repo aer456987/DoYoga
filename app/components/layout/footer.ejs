@@ -24,22 +24,30 @@
               >
                 <input
                   type="email"
+                  name="Email"
                   id="subscriptionEmail"
-                  class="form-control text-primary"
+                  class="form-control js-subscription-email text-primary"
                   placeholder="輸入您的電子信箱"
                   aria-label="輸入您的電子信箱"
                   aria-describedby="訂閱信箱"
                 >
-                <label
-                  for="subscriptionEmail"
-                  class="btn btn-primary-light
+                <button
+                  type="button"
+                  class="js-subscription-btn
+                    btn btn-outline-primary-light
                     text-light fw-light
                     py-4 px-8"
+                  disabled
                 >
                   訂閱
-                </label>
+                </button>
               </div>
             </div>
+            <p class="js-subscription-email-msg
+              validate-msg validate-msg-white
+              fs-8 text-light text-start
+              ms-12 pt-4"
+            ></p>
           </div>
         </div>
       </div>
@@ -113,7 +121,7 @@
       </div>
 
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-3">
           <ul class="navbar-nav">
             <li
               class="nav-item"

@@ -56,9 +56,9 @@ current: reserve_step2_fillOrder
     </ul>
 
     <form
-      action=""
+      action="#"
       method="POST"
-      class="pt-16 pt-md-12 pt-lg-16"
+      class="js-reserve-data pt-16 pt-md-12 pt-lg-16"
     >
       <div
         class="d-flex justify-content-center mb-12 mb-lg-16"
@@ -96,8 +96,14 @@ current: reserve_step2_fillOrder
       >
         <div class="col-md-6 col-lg-4">
           <ul class="text-dark mb-16">
+            <li class="mb-2 text-end text-danger fw-bold">
+              <p>* 為必填</p>
+            </li>
             <li class="mb-16">
-              <p class="mb-8">1. 是否接觸過瑜珈?</p>
+              <p class="mb-8">
+                1. 是否接觸過瑜珈?
+                <span class="text-danger fw-bold">*</span>
+              </p>
 
               <label
                 for="yogaYesRadio"
@@ -106,10 +112,10 @@ current: reserve_step2_fillOrder
                 <input
                   type="radio"
                   name="practiseYogaRadio"
-                  value="接觸過瑜珈"
+                  value="1"
                   id="yogaYesRadio"
                   class="form-check-input"
-                  checked
+                  required
                 >
                 是
               </label>
@@ -121,16 +127,20 @@ current: reserve_step2_fillOrder
                 <input
                   type="radio"
                   name="practiseYogaRadio"
-                  value="沒接觸過瑜珈"
+                  value="0"
                   id="yogaNoRadio"
                   class="form-check-input"
+                  required
                 >
                 否
               </label>
             </li>
 
             <li class="mb-16">
-              <p class="mb-8">2. 想改善的生活問題?</p>
+              <p class="mb-8">
+                2. 想改善的生活問題?
+                <span class="text-danger fw-bold">*</span>
+              </p>
 
               <ul>
                 <li class="mb-8">
@@ -224,7 +234,10 @@ current: reserve_step2_fillOrder
             </li>
 
             <li class="mb-16">
-              <p class="mb-8">3. 每週累積運動量約為多少？</p>
+              <p class="mb-8">
+                3. 每週累積運動量約為多少？
+                <span class="text-danger fw-bold">*</span>
+              </p>
 
               <ul>
                 <li>
@@ -238,7 +251,7 @@ current: reserve_step2_fillOrder
                       name="sportsTime"
                       id="sportsTime_1"
                       class="form-check-input"
-                      checked
+                      required
                     >
                     150 分鐘以上
                   </label>
@@ -253,6 +266,7 @@ current: reserve_step2_fillOrder
                       name="sportsTime"
                       id="sportsTime_2"
                       class="form-check-input"
+                      required
                     >
                     75~150 分鐘
                   </label>
@@ -269,6 +283,7 @@ current: reserve_step2_fillOrder
                       name="sportsTime"
                       id="sportsTime_3"
                       class="form-check-input"
+                      required
                     >
                     30~75 分鐘
                   </label>
@@ -283,6 +298,7 @@ current: reserve_step2_fillOrder
                       name="sportsTime"
                       id="sportsTime_4"
                       class="form-check-input"
+                      required
                     >
                     30 分鐘以下
                   </label>
@@ -296,6 +312,7 @@ current: reserve_step2_fillOrder
                 class="mb-4"
               >
                 4. 上課預約報到日
+                <span class="text-danger fw-bold">*</span>
                 <small class="mt-2 d-block">
                   若還沒有確定的日期，可以等待專員與您聯絡時在做詳細的諮詢哦！
                 </small>
@@ -304,8 +321,10 @@ current: reserve_step2_fillOrder
               <input
                 type="text"
                 placeholder="MM/DD/YYYY"
+                name="reserveDate"
                 id="reserveDate"
                 class="form-control js-datepicker-date w-auto text-primary"
+                required
               >
             </li>
 
@@ -323,13 +342,21 @@ current: reserve_step2_fillOrder
                         class="form-label mb-4"
                       >
                         姓名
+                        <span class="text-danger fw-bold">*</span>
                       </label>
                       <input
                         type="text"
+                        name="姓名"
                         placeholder="請輸入您的姓名"
                         id="reserveName"
-                        class="form-control text-primary"
+                        class="form-control js-form-reserve text-primary"
+                        required
                       >
+                      <p class="js-validate-msg
+                        validate-msg
+                        fs-8 text-danger text-end
+                        pt-4"
+                      ></p>
                     </div>
 
                     <div class="col-6">
@@ -338,13 +365,21 @@ current: reserve_step2_fillOrder
                         class="form-label mb-4"
                       >
                         年齡
+                        <span class="text-danger fw-bold">*</span>
                       </label>
                       <input
                         type="text"
+                        name="年齡"
                         placeholder="請輸入您的年齡"
                         id="reserveAge"
-                        class="form-control text-primary"
+                        class="form-control js-form-reserve text-primary"
+                        required
                       >
+                      <p class="js-validate-msg
+                        validate-msg
+                        fs-8 text-danger text-end
+                        pt-4"
+                      ></p>
                     </div>
                   </div>
                 </li>
@@ -355,14 +390,23 @@ current: reserve_step2_fillOrder
                     class="form-label mb-4"
                   >
                     性別
+                    <span class="text-danger fw-bold">*</span>
                   </label>
                   <select
+                    name="reserveGender"
                     id="reserveGender"
-                    class="form-select border-primary-light w-auto text-primary"
+                    class="form-select js-form-reserve border-primary-light w-auto text-primary"
+                    required
                   >
-                    <option value="女" selected>女</option>
+                    <option value="" selected disabled>請選擇性別</option>
+                    <option value="女">女</option>
                     <option value="男">男</option>
                   </select>
+                  <p class="js-validate-msg
+                    validate-msg
+                    fs-8 text-danger text-end
+                    pt-4"
+                  ></p>
                 </li>
 
                 <li class="mb-8">
@@ -371,13 +415,21 @@ current: reserve_step2_fillOrder
                     class="form-label mb-4"
                   >
                     電子信箱
+                    <span class="text-danger fw-bold">*</span>
                   </label>
                   <input
                     type="email"
+                    name="Email"
                     placeholder="請輸入Email"
                     id="reserveEmail"
-                    class="form-control text-primary"
+                    class="form-control js-form-reserve js-form-email text-primary"
+                    required
                   >
+                  <p class="js-validate-msg
+                    validate-msg
+                    fs-8 text-danger text-end
+                    pt-4"
+                  ></p>
                 </li>
 
                 <li>
@@ -386,30 +438,36 @@ current: reserve_step2_fillOrder
                     class="form-label mb-4"
                   >
                     手機號碼
+                    <span class="text-danger fw-bold">*</span>
                   </label>
                   <input
                     type="tel"
+                    name="手機號碼"
                     placeholder="請輸入手機號碼"
+                    pattern="^09\d{8}$"
+                    maxlength="10"
                     id="reservePhone"
-                    class="form-control text-primary"
+                    class="form-control js-form-reserve js-form-phone text-primary"
+                    required
                   >
+                  <p class="js-validate-msg
+                    validate-msg
+                    fs-8 text-danger text-end
+                    pt-4"
+                  ></p>
                 </li>
               </ul>
             </li>
           </ul>
 
-          <div
-            data-aos="zoom-in"
-            data-aos-duration="500"
-            data-aos-easing="ease-out"
+          <a
+            href="./reserve_step3_reserveFinish.html"
+            class="js-form-reserve-btn
+              btn btn-outline-primary-light disabled
+              py-4 w-100"
           >
-            <a
-              href="./reserve_step3_reserveFinish.html"
-              class="btn btn-primary-light py-4 w-100"
-            >
-              送出
-            </a>
-          </div>
+            送出
+          </a>
         </div>
       </div>
 
