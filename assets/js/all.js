@@ -173,7 +173,6 @@ function getReserveDate() {
   inputData.userData.gender = $('#reserveGender').val();
   inputData.userData.email = $('#reserveEmail').val();
   inputData.userData.phone = $('#reservePhone').val();
-  inputData.userData.age = $('#reserveAge').val().parseInt();
   return inputData;
 }
 
